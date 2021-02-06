@@ -60,7 +60,7 @@ This library has two basic function that you can use to control everything on MC
 | OLAT     | 0x0A  | The OLAT  register  provides  access  to  the  output latches. |
 
 
-Also this library has other functions that make the job easy to build applications. See [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).
+Also this library has other functions that make the job easier to build applications. See [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).
 
 
 
