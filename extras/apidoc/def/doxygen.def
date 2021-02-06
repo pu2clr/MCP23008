@@ -32,11 +32,12 @@ GPIO_OUTPUT
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '43';
+      sec-mem-desc-line = '42';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Starts the MCP23008.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Starts the MCP23008 and sets the default values. 
 @param i2c I2C address (0x20 ~ 0x27) - default 0x20
 @param io  If GPIO_OUTPUT (0), all  GPIO PINS will configured to output
            If GPIO_INPUT  (255), all GPIO PINS will configured to input  
@@ -60,11 +61,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'value';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '44';
+      sec-mem-desc-line = '43';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets a value to the GPIO Register.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+A direct way to set a given value to deal with the GPIOs pins.
 @param value (8 bits)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -84,11 +86,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'reg';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '45';
+      sec-mem-desc-line = '44';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the corrent register information.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Gets the current register content. 
 @param reg  (0x00 ~ 0xA) see MCP23008 registers documentation 
 @return uint8_t current register value
 _EnD_oF_dEf_TeXt_;
@@ -115,11 +118,13 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'value';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '46';
+      sec-mem-desc-line = '45';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets a value to a given register.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Sets a given 8 bit value to a given register.  
+<br>
 @param reg   (0x00 ~ 0xA) see MCP23008 registers documentation 
 @param value value (8 bits)
 _EnD_oF_dEf_TeXt_;
@@ -140,11 +145,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '47';
+      sec-mem-desc-line = '46';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns a given GPIO port on (high level)
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Sets a given GPIO pin high
 @param gpio the GPIO/PIN number (0-7)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -164,11 +170,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '48';
+      sec-mem-desc-line = '47';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns a given GPIO port off (low level)
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Sets a given GPIO pin to low
 @param gpio the GPIO/PIN number (0-7)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -188,11 +195,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '49';
+      sec-mem-desc-line = '48';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns intenal pull up resistor ON  to  a given GPIO PIN (high level)
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Activates the pull up resistor to a given GPIO pin
 @param gpio the GPIO/PIN number (0-7)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -212,11 +220,12 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '50';
+      sec-mem-desc-line = '49';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns intenal pull up resistor OFF  to a given GPIO PIN (low level)
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Deactivates the pull up resistor to a given GPIO pin
 @param gpio the GPIO/PIN number (0-7)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -230,7 +239,7 @@ uint8_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'getGPIOS';
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '57';
+      sec-mem-desc-line = '56';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Return the current MCP GPIO pin levels.
 _EnD_oF_dEf_TeXt_;
@@ -254,7 +263,7 @@ _EnD_oF_dEf_TeXt_;
 = 0x20
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '39';
+      sec-mem-desc-line = '38';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -275,7 +284,7 @@ _EnD_oF_dEf_TeXt_;
 = 0
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '40';
+      sec-mem-desc-line = '39';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -285,7 +294,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-  cp-fileline  = '35';
+  cp-fileline  = '34';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -319,7 +328,7 @@ file = {
 0x00
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '19';
+      define-mem-desc-line = '18';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Controls the direction of the data I/O. When  a  bit  is  set,  the  corresponding  pin  becomes  an input.  When  a  bit  is  clear,  the  corresponding  pin becomes an output.
 _EnD_oF_dEf_TeXt_;
@@ -337,7 +346,7 @@ _EnD_oF_dEf_TeXt_;
 0x01
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '20';
+      define-mem-desc-line = '19';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The IPOL  register  allows  the  user  to  configure  thepolarity on the corresponding GPIO port bits.
 _EnD_oF_dEf_TeXt_;
@@ -355,7 +364,7 @@ _EnD_oF_dEf_TeXt_;
 0x02
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '21';
+      define-mem-desc-line = '20';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The GPINTEN register controls the interrupt-on-change feature for each pin.
 _EnD_oF_dEf_TeXt_;
@@ -373,7 +382,7 @@ _EnD_oF_dEf_TeXt_;
 0x03
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '22';
+      define-mem-desc-line = '21';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The default  comparison  value  is  configured  in  the DEFVAL register.
 _EnD_oF_dEf_TeXt_;
@@ -391,7 +400,7 @@ _EnD_oF_dEf_TeXt_;
 0x04
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '23';
+      define-mem-desc-line = '22';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The INTCON register controls how the associated pin value is compared for the interrupt-on-change feature.
 _EnD_oF_dEf_TeXt_;
@@ -409,7 +418,7 @@ _EnD_oF_dEf_TeXt_;
 0x05
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '24';
+      define-mem-desc-line = '23';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The IOCON register contains several bits for configuring the device.
 _EnD_oF_dEf_TeXt_;
@@ -427,7 +436,7 @@ _EnD_oF_dEf_TeXt_;
 0x06
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '25';
+      define-mem-desc-line = '24';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The GPPU register controls the pull-up resistors for the port  pins.
 _EnD_oF_dEf_TeXt_;
@@ -445,7 +454,7 @@ _EnD_oF_dEf_TeXt_;
 0x07
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '26';
+      define-mem-desc-line = '25';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register.
 _EnD_oF_dEf_TeXt_;
@@ -463,7 +472,7 @@ _EnD_oF_dEf_TeXt_;
 0x08
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '27';
+      define-mem-desc-line = '26';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The INTCAP register captures the GPIO port value at the  time  the  interrupt  occurred.
 _EnD_oF_dEf_TeXt_;
@@ -481,7 +490,7 @@ _EnD_oF_dEf_TeXt_;
 0x09
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '28';
+      define-mem-desc-line = '27';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The GPIO  register  reflects  the  value  on  the  port.
 _EnD_oF_dEf_TeXt_;
@@ -499,7 +508,7 @@ _EnD_oF_dEf_TeXt_;
 0x0A
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '29';
+      define-mem-desc-line = '28';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The OLAT  register  provides  access  to  the  output latches.
 _EnD_oF_dEf_TeXt_;
@@ -517,7 +526,7 @@ _EnD_oF_dEf_TeXt_;
 0xFF
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '31';
+      define-mem-desc-line = '30';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -535,7 +544,7 @@ _EnD_oF_dEf_TeXt_;
 0x00
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      define-mem-desc-line = '32';
+      define-mem-desc-line = '31';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;

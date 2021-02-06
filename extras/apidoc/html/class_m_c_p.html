@@ -159,7 +159,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Starts the MCP23008. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Starts the MCP23008 and sets the default values. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i2c</td><td>I2C address (0x20 ~ 0x27) - default 0x20 </td></tr>
     <tr><td class="paramname">io</td><td>If GPIO_OUTPUT (0), all GPIO PINS will configured to output If GPIO_INPUT (255), all GPIO PINS will configured to input <br  />
@@ -187,7 +187,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets a value to the GPIO Register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>A direct way to set a given value to deal with the GPIOs pins. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>(8 bits) </td></tr>
   </table>
@@ -213,7 +213,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the corrent register information. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Gets the current register content. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reg</td><td>(0x00 ~ 0xA) see MCP23008 registers documentation </td></tr>
   </table>
@@ -250,7 +250,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets a value to a given register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Sets a given 8 bit value to a given register. <br  />
+ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reg</td><td>(0x00 ~ 0xA) see MCP23008 registers documentation </td></tr>
     <tr><td class="paramname">value</td><td>value (8 bits) </td></tr>
@@ -277,7 +278,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Turns a given GPIO port on (high level) </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Sets a given GPIO pin high </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gpio</td><td>the GPIO/PIN number (0-7) </td></tr>
   </table>
@@ -303,7 +304,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Turns a given GPIO port off (low level) </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Sets a given GPIO pin to low </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gpio</td><td>the GPIO/PIN number (0-7) </td></tr>
   </table>
@@ -329,7 +330,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Turns intenal pull up resistor ON to a given GPIO PIN (high level) </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Activates the pull up resistor to a given GPIO pin </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gpio</td><td>the GPIO/PIN number (0-7) </td></tr>
   </table>
@@ -355,7 +356,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Turns intenal pull up resistor OFF to a given GPIO PIN (low level) </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Deactivates the pull up resistor to a given GPIO pin </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gpio</td><td>the GPIO/PIN number (0-7) </td></tr>
   </table>

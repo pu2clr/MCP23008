@@ -5,8 +5,7 @@
  * 
  * @author Ricardo LIma Caratti (pu2clr@gmail.com)
  * @brief It is a Library to control the MCP23008 device.
- * @version 1.0.0
- * @date 2020-08-07
+ * @date 2021-01-06
  * 
  * This library can be freely distributed using the MIT Free Software model.
  * 
