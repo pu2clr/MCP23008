@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab669a85d10e0c8372babed1c49ffb5ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#ab669a85d10e0c8372babed1c49ffb5ed">pullUpGpioOff</a> (uint8_t gpio)</td></tr>
 <tr class="memdesc:ab669a85d10e0c8372babed1c49ffb5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns intenal pull up resistor OFF to a given GPIO PIN (low level)  <a href="class_m_c_p.html#ab669a85d10e0c8372babed1c49ffb5ed">More...</a><br /></td></tr>
 <tr class="separator:ab669a85d10e0c8372babed1c49ffb5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ecb8741304bbaee9e1626f57efcdea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#ad5ecb8741304bbaee9e1626f57efcdea">setIoCon</a> (uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, uint8_t SEQOP)</td></tr>
+<tr class="memdesc:ad5ecb8741304bbaee9e1626f57efcdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IO Configurarion gerister.  <a href="class_m_c_p.html#ad5ecb8741304bbaee9e1626f57efcdea">More...</a><br /></td></tr>
+<tr class="separator:ad5ecb8741304bbaee9e1626f57efcdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb2b67c45363a172323bf51f18b51fe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#a0cb2b67c45363a172323bf51f18b51fe">getGPIOS</a> ()</td></tr>
 <tr class="memdesc:a0cb2b67c45363a172323bf51f18b51fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current <a class="el" href="class_m_c_p.html">MCP</a> GPIO pin levels.  <a href="class_m_c_p.html#a0cb2b67c45363a172323bf51f18b51fe">More...</a><br /></td></tr>
 <tr class="separator:a0cb2b67c45363a172323bf51f18b51fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,6 +362,72 @@ Protected Attributes</h2></td></tr>
 <p>Deactivates the pull up resistor to a given GPIO pin </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gpio</td><td>the GPIO/PIN number (0-7) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad5ecb8741304bbaee9e1626f57efcdea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ecb8741304bbaee9e1626f57efcdea">&#9670;&nbsp;</a></span>setIoCon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MCP::setIoCon </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>INTPOL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ODR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>HAEN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>DISSLW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>SEQOP</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the IO Configurarion gerister. </p>
+<p>The IOCON register contains several bits for configuring the device:</p>
+<p>TheSequentialOperation(SEQOP)controlsthe incrementing function of the address pointer.</p>
+<p>If the address pointer is disabled, the address pointer does not automatically increment after each byte is clocked during a serial transfer.</p>
+<p>This feature is useful when it is desired to continuously poll (read) or modify (write) a register.</p>
+<p>TheSlewRate(DISSLW)bitcontrolstheslew rate function on the SDA pin. If enabled, the SDA slew rate will be controlled when driving from a high to a low.</p>
+<p>TheHardwareAddressEnable(HAEN)controlbit enables/disables the hardware address pins (A1, A0) on the MCP23S08. This bit is not used on the MCP23008. The address pins are always enabled on the MCP23008.</p>
+<p>TheOpen-Drain(ODR)controlbitenables/ disables the INT pin for open-drain configuration.</p>
+<p>TheInterruptPolarity(INTPOL)controlbitsets the polarity of the INT pin. This bit is functional only when the ODR bit is cleared, configuring the INT pin as active push-pull.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">INTPOL</td><td>This bit sets the polarity of the INT output pin. 1= Active-high. 0 = Active - low. </td></tr>
+    <tr><td class="paramname">ODR</td><td>This bit configures the INT pin as an open-drain output. 1 = Open-drain. 0 = Active driver. </td></tr>
+    <tr><td class="paramname">HAEN</td><td>Hardware Address Enable bit (MCP23S08 only). 1 = Enables. </td></tr>
+    <tr><td class="paramname">DISSLW</td><td>Slew Rate control bit for SDA output. 1= Slewratedisabled. 0= Slewrateenabled. </td></tr>
+    <tr><td class="paramname">SEQOP</td><td>Sequential Operation mode bit. 1 = Sequential operation disabled, address pointer does not increment. </td></tr>
   </table>
   </dd>
 </dl>

@@ -1,6 +1,19 @@
 var pu2clr__mcp23008_8h =
 [
+    [ "mcp23008_ioncon", "pu2clr__mcp23008_8h.html#unionmcp23008__ioncon", [
+      [ "arg", "pu2clr__mcp23008_8h.html#ae5d322d39d57feb79d8a77526daa6504", null ],
+      [ "raw", "pu2clr__mcp23008_8h.html#abf64e04f118e35a8b46cbd537399d132", null ]
+    ] ],
     [ "MCP", "class_m_c_p.html", "class_m_c_p" ],
+    [ "mcp23008_ioncon.arg", "pu2clr__mcp23008_8h.html#structmcp23008__ioncon_8arg", [
+      [ "DUMMY1", "pu2clr__mcp23008_8h.html#a3651c40ccc4450f2fc89fa3139dedd5a", null ],
+      [ "INTPOL", "pu2clr__mcp23008_8h.html#aafb27e01639daf2cb27c7dfb3b336a62", null ],
+      [ "ODR", "pu2clr__mcp23008_8h.html#a8a5a2bf6fd2aa354a65fd964483c49e4", null ],
+      [ "HAEN", "pu2clr__mcp23008_8h.html#acd0fe1a1d03df910dfa4efab38dcd8f6", null ],
+      [ "DISSLW", "pu2clr__mcp23008_8h.html#af0b6983ddddd573a3116a9127c94a8db", null ],
+      [ "SEQOP", "pu2clr__mcp23008_8h.html#ad6d490ff4f554a6692997176fa9d34d4", null ],
+      [ "DUMMY2", "pu2clr__mcp23008_8h.html#abece94c62273dc7ecfabc565b76dbbe5", null ]
+    ] ],
     [ "REG_IODIR", "pu2clr__mcp23008_8h.html#a5fc08d2f74765206202ac3721b7c7125", null ],
     [ "REG_IPOL", "pu2clr__mcp23008_8h.html#af770bc40e87878d08198ed10b0cce6b7", null ],
     [ "REG_GPINTEN", "pu2clr__mcp23008_8h.html#a575e0c713d36d9de6d81f6b746574a7b", null ],

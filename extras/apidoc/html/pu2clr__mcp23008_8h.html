@@ -97,8 +97,13 @@ $(document).ready(function(){initNavTree('pu2clr__mcp23008_8h.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:unionmcp23008__ioncon"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pu2clr__mcp23008_8h.html#unionmcp23008__ioncon">mcp23008_ioncon</a></td></tr>
+<tr class="memdesc:unionmcp23008__ioncon"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05)  <a href="pu2clr__mcp23008_8h.html#unionmcp23008__ioncon">More...</a><br /></td></tr>
+<tr class="separator:unionmcp23008__ioncon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html">MCP</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmcp23008__ioncon_8arg"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pu2clr__mcp23008_8h.html#structmcp23008__ioncon_8arg">mcp23008_ioncon.arg</a></td></tr>
+<tr class="separator:structmcp23008__ioncon_8arg"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -140,6 +145,97 @@ Macros</h2></td></tr>
 <tr class="memitem:a0db9fe8a278e6ab7c5c6f14fe58e5eb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="separator:a0db9fe8a278e6ab7c5c6f14fe58e5eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="unionmcp23008__ioncon" id="unionmcp23008__ioncon"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionmcp23008__ioncon">&#9670;&nbsp;</a></span>mcp23008_ioncon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union mcp23008_ioncon</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05) </p>
+<p>The IOCON register contains several bits for configuring the device. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ae5d322d39d57feb79d8a77526daa6504"></a>struct <a class="el" href="pu2clr__mcp23008_8h.html#structmcp23008__ioncon_8arg">mcp23008_ioncon</a></td>
+<td class="fieldname">
+arg</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="abf64e04f118e35a8b46cbd537399d132"></a>uint8_t</td>
+<td class="fieldname">
+raw</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmcp23008__ioncon_8arg" id="structmcp23008__ioncon_8arg"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmcp23008__ioncon_8arg">&#9670;&nbsp;</a></span>mcp23008_ioncon.arg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mcp23008_ioncon.arg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a3651c40ccc4450f2fc89fa3139dedd5a"></a>uint8_t</td>
+<td class="fieldname">
+DUMMY1: 1</td>
+<td class="fielddoc">
+Unimplemented. </td></tr>
+<tr><td class="fieldtype">
+<a id="aafb27e01639daf2cb27c7dfb3b336a62"></a>uint8_t</td>
+<td class="fieldname">
+INTPOL: 1</td>
+<td class="fielddoc">
+This bit sets the polarity of the INT output pin. 1= Active-high. 0 = Active - low. </td></tr>
+<tr><td class="fieldtype">
+<a id="a8a5a2bf6fd2aa354a65fd964483c49e4"></a>uint8_t</td>
+<td class="fieldname">
+ODR: 1</td>
+<td class="fielddoc">
+This bit configures the INT pin as an open-drain output. 1 = Open-drain. 0 = Active driver. </td></tr>
+<tr><td class="fieldtype">
+<a id="acd0fe1a1d03df910dfa4efab38dcd8f6"></a>uint8_t</td>
+<td class="fieldname">
+HAEN: 1</td>
+<td class="fielddoc">
+Hardware Address Enable bit (MCP23S08 only). 1 = Enables. </td></tr>
+<tr><td class="fieldtype">
+<a id="af0b6983ddddd573a3116a9127c94a8db"></a>uint8_t</td>
+<td class="fieldname">
+DISSLW: 1</td>
+<td class="fielddoc">
+Slew Rate control bit for SDA output. 1= Slewratedisabled. 0= Slewrateenabled. </td></tr>
+<tr><td class="fieldtype">
+<a id="ad6d490ff4f554a6692997176fa9d34d4"></a>uint8_t</td>
+<td class="fieldname">
+SEQOP: 1</td>
+<td class="fielddoc">
+Sequential Operation mode bit. 1 = Sequential operation disabled, address pointer does not increment. </td></tr>
+<tr><td class="fieldtype">
+<a id="abece94c62273dc7ecfabc565b76dbbe5"></a>uint8_t</td>
+<td class="fieldname">
+DUMMY2: 2</td>
+<td class="fielddoc">
+Unimplemented. </td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5fc08d2f74765206202ac3721b7c7125"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fc08d2f74765206202ac3721b7c7125">&#9670;&nbsp;</a></span>REG_IODIR</h2>

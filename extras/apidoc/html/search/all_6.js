@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['turngpiooff_25',['turnGpioOff',['../class_m_c_p.html#a09893717b6ae4b71455ea2a3657a88eb',1,'MCP']]],
-  ['turngpioon_26',['turnGpioOn',['../class_m_c_p.html#a0164b9f8c7ec58465d00b5761b5d4e0d',1,'MCP']]]
+  ['setgpios_26',['setGPIOS',['../class_m_c_p.html#a9d0c5ff49456ba2016efb6dc56ddb1cd',1,'MCP']]],
+  ['setiocon_27',['setIoCon',['../class_m_c_p.html#ad5ecb8741304bbaee9e1626f57efcdea',1,'MCP']]],
+  ['setregister_28',['setRegister',['../class_m_c_p.html#aba8f4501efb5a9772a5b7ec7a428ac4d',1,'MCP']]],
+  ['setup_29',['setup',['../class_m_c_p.html#adb7256b4dbca399d6c917c0ddf44367c',1,'MCP']]]
 ];

@@ -8,6 +8,7 @@ var class_m_c_p =
     [ "turnGpioOff", "class_m_c_p.html#a09893717b6ae4b71455ea2a3657a88eb", null ],
     [ "pullUpGpioOn", "class_m_c_p.html#ad504a9ca7a1af1c98cabcf2f7c7a88c8", null ],
     [ "pullUpGpioOff", "class_m_c_p.html#ab669a85d10e0c8372babed1c49ffb5ed", null ],
+    [ "setIoCon", "class_m_c_p.html#ad5ecb8741304bbaee9e1626f57efcdea", null ],
     [ "getGPIOS", "class_m_c_p.html#a0cb2b67c45363a172323bf51f18b51fe", null ],
     [ "i2cAddress", "class_m_c_p.html#a661ef40042948051e9addd4891e66460", null ],
     [ "gpios", "class_m_c_p.html#accfcacc44509bb19a411856f91f4568a", null ]
