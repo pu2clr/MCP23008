@@ -134,3 +134,33 @@ void MCP::pullUpGpioOff(uint8_t gpio)
     gppu &= ~(1 << gpio);
     setRegister(REG_GPPU, gppu); // Updates the values of pull-up setup
 }
+
+/**
+ * @brief Sets the IO Configurarion gerister
+ * @details The IOCON register contains several bits for configuring the device:
+ * @details TheSequentialOperation(SEQOP)controlsthe incrementing function of the address pointer. 
+ * @details If the address pointer is disabled, the address pointer does not automatically increment after each byte is clocked during a serial transfer. 
+ * @details This feature is useful when it is desired to continuously poll (read) or modify (write) a register.
+ * @details TheSlewRate(DISSLW)bitcontrolstheslew rate function on the SDA pin. If enabled, the SDA slew rate will be controlled when driving from a high to a low.
+ * @details TheHardwareAddressEnable(HAEN)controlbit enables/disables the hardware address pins (A1, A0) on the MCP23S08. This bit is not used on the MCP23008. The address pins are always enabled on the MCP23008.
+ * @details TheOpen-Drain(ODR)controlbitenables/ disables the INT pin for open-drain configuration.
+ * @details TheInterruptPolarity(INTPOL)controlbitsets the polarity of the INT pin. This bit is functional only when the ODR bit is cleared, configuring the INT pin as active push-pull.
+ * 
+ * @param INTPOL  This bit sets the polarity of the INT output pin. 1= Active-high. 0 = Active - low.
+ * @param ODR     This bit configures the INT pin as an open-drain output. 1 = Open-drain. 0 = Active driver.
+ * @param HAEN    Hardware Address Enable bit (MCP23S08 only). 1 = Enables.
+ * @param DISSLW  Slew Rate control bit for SDA output. 1= Slewratedisabled. 0= Slewrateenabled.
+ * @param SEQOP   Sequential Operation mode bit. 1 = Sequential operation disabled, address pointer does not increment.
+ */
+void MCP::setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, uint8_t SEQOP) {
+
+    mcp23008_ioncon iocon;
+
+    iocon.arg.INTPOL = INTPOL;
+    iocon.arg.ODR = ODR;
+    iocon.arg.HAEN = HAEN;
+    iocon.arg.DISSLW = DISSLW;
+    iocon.arg.SEQOP = SEQOP;
+
+    this->setRegister(REG_IOCON, iocon.raw);
+}

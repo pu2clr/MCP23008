@@ -30,6 +30,23 @@
 #define GPIO_INPUT  0xFF
 #define GPIO_OUTPUT 0x00
 
+/**
+ * @brief IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05)
+ * @details The IOCON register contains several bits for configuring the device. 
+ */
+typedef union {
+   struct {
+      uint8_t DUMMY1 : 1; //!< Unimplemented
+      uint8_t INTPOL : 1; //!< This bit sets the polarity of the INT output pin. 1= Active-high. 0 = Active - low.
+      uint8_t ODR : 1;    //!< This bit configures the INT pin as an open-drain output. 1 = Open-drain. 0 = Active driver.
+      uint8_t HAEN : 1;   //!< Hardware Address Enable bit (MCP23S08 only). 1 = Enables.
+      uint8_t DISSLW : 1; //!< Slew Rate control bit for SDA output. 1= Slewratedisabled. 0= Slewrateenabled.
+      uint8_t SEQOP : 1;  //!< Sequential Operation mode bit. 1 = Sequential operation disabled, address pointer does not increment.
+      uint8_t DUMMY2 : 2; //!< Unimplemented
+   } arg;
+   uint8_t raw;
+} mcp23008_ioncon;
+
 
 class MCP {
 
@@ -47,12 +64,15 @@ class MCP {
     void turnGpioOff(uint8_t gpio);
     void pullUpGpioOn(uint8_t gpio);
     void pullUpGpioOff(uint8_t gpio);
+    void setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, uint8_t SEQOP);
 
-    /**
+        /**
      * @brief Return the current MCP GPIO pin levels 
      * 
      * @return uint8_t 
      */
-    inline uint8_t getGPIOS() { return this->gpios; };
-
+        inline uint8_t getGPIOS()
+    {
+       return this->gpios;
+    };
 };
