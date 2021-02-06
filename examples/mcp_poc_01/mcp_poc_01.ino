@@ -1,5 +1,5 @@
 
-#include "mcp23008.h"
+#include "pu2clr_mcp23008.h"
 
 
 char sBuffer[80];

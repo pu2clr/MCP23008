@@ -1,4 +1,4 @@
-#include "mcp23008.h"
+#include "pu2clr_mcp23008.h"
 
 #include <Wire.h>
 
@@ -29,7 +29,7 @@ uint8_t MCP::getRegister(uint8_t reg) {
     Wire.beginTransmission(this->i2cAddress);
     Wire.write(reg);
     Wire.endTransmission();
-    Wire.requestFrom(this->i2cAddress, 1); // reading 0x0A register
+    Wire.requestFrom((int) this->i2cAddress, (int) 1); 
     return Wire.read();
 }
 
@@ -95,8 +95,6 @@ void MCP::turnGpioOff(uint8_t gpio)
  */
 void MCP::pullUpGpioOn(uint8_t gpio)
 {
-    // TODO
-    uint8_t b = (1 << gpio);
     uint8_t gppu; 
 
     if (gpio > 7) 
@@ -114,8 +112,6 @@ void MCP::pullUpGpioOn(uint8_t gpio)
  */
 void MCP::pullUpGpioOff(uint8_t gpio)
 {
-    // TODO
-    uint8_t b = (1 << gpio);
     uint8_t gppu;
 
     if (gpio > 7)
