@@ -2,7 +2,7 @@
 
 It is an Arduino Library to control the MCP23008/MCP23S08 8-Bit I/O Expander. 
 
-The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controllled via I2C bus applications. 
+The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I2C bus applications. 
 
 This Arduino library implements the most important functions available on MCP23008 device  and can be freely distributed using the MIT Free Software model. 
 

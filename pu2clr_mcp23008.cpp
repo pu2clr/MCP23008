@@ -1,8 +1,27 @@
+/**
+ * @file pu2clr_mcp23008.cpp
+ * 
+ * This library was built based on the Datasheet "MCP23008/MCP23S08 8-Bit I/O Expander with Serial Interface" from Microchip
+ * 
+ * @author your name (you@domain.com)
+ * @brief MCP23008 controller
+ * @version 0.1
+ * @date 2021-02-06
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+*@file pu2clr_mcp23008.cpp
+            *@author your name(you @domain.com) *
+        @brief
+            *@version 0.1 *
+        @date 2021 -
+    02 - 06 * *@copyright Copyright(c) 2021 * * / *@file pu2clr_mcp23008.cpp *@author your name(you @domain.com) * @brief *@version 0.1 * @date 2021 - 02 - 06 * *@copyright Copyright(c) 2021 * * /
 #include "pu2clr_mcp23008.h"
 
 #include <Wire.h>
 
-/**
+                                                                                                                                                                /**
  * @brief Starts the MCP23008 
  * 
  * @param i2c I2C address (0x20 ~ 0x27) - default 0x20
@@ -10,7 +29,7 @@
  *            If GPIO_INPUT  (255), all GPIO PINS will configured to input  
  *            You also can use a bitmask to configure some pins for input and other pins for output. 
  */
-void MCP::setup(uint8_t i2c, uint8_t io) {
+                                                                                                                                                                void MCP::setup(uint8_t i2c, uint8_t io) {
   
     Wire.begin(); //creates a Wire object
   
