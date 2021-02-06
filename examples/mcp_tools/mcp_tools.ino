@@ -31,7 +31,13 @@ void setup(){
         // Sets the GPIO pins 0,2,3 and 7 to input and 1, 4, 5 and 6 to output
         mcp.setRegister(REG_IODIR, 0B10001101);
         showAllRegisters();
-        
+        // Sets pull-up resistors to gpio pins 0, 2, 3 and 7
+        mcp.pullUpGpioOn(0);
+        mcp.pullUpGpioOn(2);
+        mcp.pullUpGpioOn(3);
+        mcp.pullUpGpioOn(7);
+        showAllRegisters();
+        // You also can use mcp.setRegister(REG_GPPU, 0B10001101); // All at once   
     } else {
         Serial.print("\nAny MCP23008 device was found!");
         while(1);

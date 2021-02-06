@@ -114,10 +114,10 @@ void MCP::pullUpGpioOn(uint8_t gpio)
 
     if (gpio > 7) 
         return;
-        
-    gppu |= 1 << gpio;
 
-    setRegister(REG_GPPU, gppu);
+    gppu = getRegister(REG_GPPU); // Gets the current values of pull-up setup
+    gppu |= 1 << gpio;
+    setRegister(REG_GPPU, gppu); // Updates the values of pull-up setup
 }
 
 /**
@@ -128,11 +128,9 @@ void MCP::pullUpGpioOn(uint8_t gpio)
 void MCP::pullUpGpioOff(uint8_t gpio)
 {
     uint8_t gppu;
-
     if (gpio > 7)
         return;
-
+    gppu = getRegister(REG_GPPU); // Gets the current values of pull-up setup
     gppu &= ~(1 << gpio);
-
-    setRegister(REG_GPPU, gppu);
+    setRegister(REG_GPPU, gppu); // Updates the values of pull-up setup
 }
