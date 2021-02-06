@@ -12,7 +12,6 @@ This Arduino library implements the most important functions available on MCP230
 ![Under construction](https://github.com/pu2clr/MCP23008/blob/main/extras/images/under_construction.png)
 
 
-
 ## Contents
 
 1. [License Copyright]()
@@ -41,6 +40,28 @@ This library uses the I²C communication protocol and implements most important 
 * Internal pull up GPIO resistors control
 * I2C address customization (0x20 ~ 0x27)
  
+
+### Registers
+
+This library has two basic function that you can use to control everything on MCP23008. You can use [getRegister](https://pu2clr.github.io/MCP23008/extras/apidoc/html/class_m_c_p.html#a490e4a6820e3a2e0dd86c1a7aa5bb920) and [setRegister](https://pu2clr.github.io/MCP23008/extras/apidoc/html/class_m_c_p.html#aba8f4501efb5a9772a5b7ec7a428ac4d) methods to setup the registers below. 
+
+| Register | Value | Description |
+| -------- | ----- | ------------|
+| IODIR    | 0x00  | Controls the direction of the data I/O. When  a  bit  is  set,  the  corresponding  pin  becomes  an input.  When  a  bit  is  clear,  the  corresponding  pin becomes an output.|
+| IPOL     | 0x01  | The IPOL  register  allows  the  user  to  configure  thepolarity on the corresponding GPIO port bits.|
+| GPINTEN  | 0x02  | The GPINTEN register controls the interrupt-on-change feature for each pin. |
+| DEFVAL   | 0x03  | The default  comparison  value  is  configured  in  the DEFVAL register.|
+| INTCON   | 0x04  | The INTCON register controls how the associated pin value is compared for the interrupt-on-change feature. |
+| IOCON    | 0x05  | The IOCON register contains several bits for configuring the device. |
+| GPPU     | 0x06  | The GPPU register controls the pull-up resistors for the port  pins. |
+| INTF     | 0x07  | The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register.|
+| INTCAP   | 0x08  | The INTCAP register captures the GPIO port value at the  time  the  interrupt  occurred. |
+| GPIO     | 0x09  | The GPIO  register  reflects  the  value  on  the  port. |
+| OLAT     | 0x0A  | The OLAT  register  provides  access  to  the  output latches. |
+
+
+Also this library has other functions that make the job easy to build applications. See [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).
+
 
 
 ## Library Installation
