@@ -18,7 +18,7 @@ This Arduino library implements the most important functions available on MCP230
 1. [License Copyright]()
 2. [Labrary Features]()
 3. [Library Installation]()
-4. [API documentation](https://pu2clr.github.io/MCP23008//extras/apidoc/html/)
+4. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
 
 
 ## MIT License 
