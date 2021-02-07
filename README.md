@@ -14,6 +14,7 @@ This Arduino library implements the most important functions available on MCP230
 2. [Labrary Features]()
 3. [Library Installation]()
 4. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
+5. [References]()
 
 
 ## MIT License 
@@ -86,5 +87,14 @@ After, unzip the MCP23008-master.zip file in your Arduino Library folder.
 
 With that approach, you will have the __most current version__ of the library. However, __it may not be the most stable version__. This is because the current version is always in development. [Prefer releases](https://github.com/pu2clr/MCP23008/releases).
 Do you need some old version (release) of this library?  If yes, [check here](https://github.com/pu2clr/MCP23008/releases). 
+
+
+## References 
+
+
+You will find a greate project made by Nancy Daniels Yoga tha uses a dual encoder conetrolled by Arduino. [Click here to find the circuit and source code project](https://github.com/LadyRoninEngineer/Si473x/tree/main/DualEncoder?fbclid=IwAR2mKtoJoSrB3h2w1bIsahIroshu2UAudA0tOVX7-EWtLmiEmW0SYPpmnIY). You can see the Nacy's circuit below. 
+
+
+
 
 
