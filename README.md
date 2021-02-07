@@ -92,7 +92,12 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 ## References 
 
 
+## Nancy Daniels Yoga 
 You will find a greate project made by Nancy Daniels Yoga tha uses a dual encoder conetrolled by Arduino. [Click here to find the circuit and source code project](https://github.com/LadyRoninEngineer/Si473x/tree/main/DualEncoder?fbclid=IwAR2mKtoJoSrB3h2w1bIsahIroshu2UAudA0tOVX7-EWtLmiEmW0SYPpmnIY). You can see the Nacy's circuit below. 
+
+<BR>
+
+![Nancy's dual encoder schematic with MCP23008](https://github.com/pu2clr/MCP23008/blob/main/extras/images/Nacy_dual_encoder_project_with_mcp23008%20.jpg)
 
 
 
