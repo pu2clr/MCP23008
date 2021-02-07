@@ -17,7 +17,10 @@
 
 #include <Wire.h>
 
+/** @defgroup group01 MCP23008 functions */
+
 /**
+ * @ingroup group01
  * @brief Starts the MCP23008 
  * @details Starts the MCP23008 and sets the default values. 
  * @param i2c I2C address (0x20 ~ 0x27) - default 0x20
@@ -32,9 +35,10 @@ void MCP::setup(uint8_t i2c, uint8_t io) {
     this->i2cAddress = i2c;
     this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
     this->setGPIOS(0);                   // // Sets all port to 0
-}  
+}
 
 /**
+ * @ingroup group01
  * @brief Gets the corrent register information. 
  * @details Gets the current register content. 
  * @param reg  (0x00 ~ 0xA) see MCP23008 registers documentation 
@@ -49,6 +53,7 @@ uint8_t MCP::getRegister(uint8_t reg) {
 }
 
 /**
+ * @ingroup group01
  * @brief Sets a value to a given register
  * @details Sets a given 8 bit value to a given register.  
  * @param reg   (0x00 ~ 0xA) see MCP23008 registers documentation 
@@ -62,6 +67,7 @@ void MCP::setRegister(uint8_t reg, uint8_t value) {
 }
 
 /**
+ * @ingroup group01
  * @brief Sets a value to the GPIO Register
  * @details A direct way to set a given value to deal with the GPIOs pins.
  * @param value (8 bits)
@@ -72,8 +78,8 @@ void MCP::setGPIOS(uint8_t value) {
     Wire.beginTransmission(i2cAddress);
 }
 
-
 /**
+ * @ingroup group01
  * @brief Turns a given GPIO port on (high level)
  * @details Sets a given GPIO pin high
  * @param gpio the GPIO/PIN number (0-7)
@@ -89,6 +95,7 @@ void MCP::turnGpioOn(uint8_t gpio)
 }
 
 /**
+ * @ingroup group01
  * @brief Turns a given GPIO port off (low level)
  * @details Sets a given GPIO pin to low
  * @param gpio the GPIO/PIN number (0-7)
@@ -104,6 +111,7 @@ void MCP::turnGpioOff(uint8_t gpio)
 }
 
 /**
+ * @ingroup group01
  * @brief Turns intenal pull up resistor ON  to  a given GPIO PIN (high level)
  * @details Activates the pull up resistor to a given GPIO pin
  * @param gpio the GPIO/PIN number (0-7)
@@ -121,6 +129,7 @@ void MCP::pullUpGpioOn(uint8_t gpio)
 }
 
 /**
+ * @ingroup group01
  * @brief Turns intenal pull up resistor OFF  to a given GPIO PIN (low level)
  * @details Deactivates the pull up resistor to a given GPIO pin
  * @param gpio the GPIO/PIN number (0-7)
@@ -136,6 +145,7 @@ void MCP::pullUpGpioOff(uint8_t gpio)
 }
 
 /**
+ * @ingroup group01
  * @brief Sets the IO Configurarion gerister
  * @details The IOCON register contains several bits for configuring the device:
  * @details TheSequentialOperation(SEQOP)controlsthe incrementing function of the address pointer. 
