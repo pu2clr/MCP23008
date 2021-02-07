@@ -72,6 +72,9 @@ This is the easiest method to install this library.
 
 On Arduino IDE, select the __"Manager Libraries..."__ iten and look for MCP23008. Finally select "PU2CLR MCP23008". 
 
+See also [Installing an Arduino Library ](https://learn.sparkfun.com/tutorials/installing-an-arduino-library/using-the-arduino-library-manager)
+
+
 ### Installing via this repository 
 
 First, you have to [download](https://github.com/pu2clr/MCP23008/archive/main.zip) this library in zip format. 
