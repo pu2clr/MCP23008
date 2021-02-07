@@ -68,6 +68,9 @@ You can install this library on your Arduino environment using different methods
 
 ### Installing via Arduino IDE
 
+This is the easiest method to install this library.
+
+On Arduino IDE, select the __"Manager Libraries..."__ iten and look for MCP23008. Finally select "PU2CLR MCP23008". 
 
 ### Installing via this repository 
 
