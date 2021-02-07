@@ -66,12 +66,13 @@ class MCP {
     void pullUpGpioOff(uint8_t gpio);
     void setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, uint8_t SEQOP);
 
-        /**
+    /**
+     * @ingroup group01
      * @brief Return the current MCP GPIO pin levels 
      * 
      * @return uint8_t 
      */
-        inline uint8_t getGPIOS()
+    inline uint8_t getGPIOS()
     {
        return this->gpios;
     };
