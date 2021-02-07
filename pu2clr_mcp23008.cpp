@@ -74,7 +74,7 @@ void MCP::setRegister(uint8_t reg, uint8_t value) {
  */
 void MCP::setGPIOS(uint8_t value) {
     this->gpios = value;
-    setRegister(REG_GPIO, value);
+    this->setRegister(REG_GPIO, value);
     Wire.beginTransmission(i2cAddress);
 }
 
@@ -91,7 +91,7 @@ void MCP::turnGpioOn(uint8_t gpio)
     if ( (bool)(gpios & b) || gpio > 7 )
         return;
     gpios = gpios | b;
-    setGPIOS(gpios);
+    this->setGPIOS(gpios);
 }
 
 /**
@@ -107,7 +107,7 @@ void MCP::turnGpioOff(uint8_t gpio)
     if ((gpios & b) == 0 || gpio > 7)
         return;
     gpios = gpios ^ b;
-    setGPIOS(gpios);
+    this->setGPIOS(gpios);
 }
 
 /**
@@ -123,9 +123,9 @@ void MCP::pullUpGpioOn(uint8_t gpio)
     if (gpio > 7) 
         return;
 
-    gppu = getRegister(REG_GPPU); // Gets the current values of pull-up setup
+    gppu = this->getRegister(REG_GPPU); // Gets the current values of pull-up setup
     gppu |= 1 << gpio;
-    setRegister(REG_GPPU, gppu); // Updates the values of pull-up setup
+    this->setRegister(REG_GPPU, gppu); // Updates the values of pull-up setup
 }
 
 /**
@@ -139,9 +139,9 @@ void MCP::pullUpGpioOff(uint8_t gpio)
     uint8_t gppu;
     if (gpio > 7)
         return;
-    gppu = getRegister(REG_GPPU); // Gets the current values of pull-up setup
+    gppu = this->getRegister(REG_GPPU); // Gets the current values of pull-up setup
     gppu &= ~(1 << gpio);
-    setRegister(REG_GPPU, gppu); // Updates the values of pull-up setup
+    this->setRegister(REG_GPPU, gppu); // Updates the values of pull-up setup
 }
 
 /**
@@ -173,4 +173,39 @@ void MCP::setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, ui
     iocon.arg.SEQOP = SEQOP;
 
     this->setRegister(REG_IOCON, iocon.raw);
+}
+
+/**
+ * @ingroup group01
+ * @brief Inverts the polarity of the __all__ GPIO port bits.
+ * @details The IPOL register allows the user to configure the polarity on the corresponding GPIO port bits.
+ * @details If a bit is set, the corresponding GPIO register bit will reflect the inverted value on the pin.
+ * @details Use the primitive setRegister(REG_IPOL, reg_value) if you ant to invert only a specific gpio.
+ * @see setRegister
+ */
+void MCP::invertGpioPolarity() {
+    uint8_t iopol; 
+    iopol = this->getRegister(REG_IPOL); // Gets the current setup
+    this->setRegister(REG_IPOL, ~iopol);
+}
+
+/**
+ * @ingroup group01
+ * @brief Sets the interrupt-on-change feature to a given GPIO pin 
+ * @details The GPINTEN register controls the interrupt-on-change feature for each pin.
+ * @details If a bit is set, the corresponding pin is enabled for interrupt-on-change. 
+ * @details The DEFVAL and INTCON registers must also be configured if any pins are enabled for interrupt-on-change.
+ * @details if you want to configure more than one GPIO at once, use the primitive  setRegister(REG_GPINTEN, reg);
+ * 
+ * @param gpio GPIO / PIN you want to configure
+ */
+void MCP::interruptGpioOn(uint8_t gpio) {
+    uint8_t reg;
+
+    if (gpio > 7)
+        return;
+
+    reg = this->getRegister(REG_GPINTEN); // Gets the current values of GPINTEN
+    reg |= 1 << gpio;
+    this->setRegister(REG_GPINTEN, reg); // Updates the values of the  GPINTEN register
 }
