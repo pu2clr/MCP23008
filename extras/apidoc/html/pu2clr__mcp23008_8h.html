@@ -111,7 +111,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a5fc08d2f74765206202ac3721b7c7125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls the direction of the data I/O. When a bit is set, the corresponding pin becomes an input. When a bit is clear, the corresponding pin becomes an output.  <a href="pu2clr__mcp23008_8h.html#a5fc08d2f74765206202ac3721b7c7125">More...</a><br /></td></tr>
 <tr class="separator:a5fc08d2f74765206202ac3721b7c7125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af770bc40e87878d08198ed10b0cce6b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pu2clr__mcp23008_8h.html#af770bc40e87878d08198ed10b0cce6b7">REG_IPOL</a>&#160;&#160;&#160;0x01</td></tr>
-<tr class="memdesc:af770bc40e87878d08198ed10b0cce6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IPOL register allows the user to configure thepolarity on the corresponding GPIO port bits.  <a href="pu2clr__mcp23008_8h.html#af770bc40e87878d08198ed10b0cce6b7">More...</a><br /></td></tr>
+<tr class="memdesc:af770bc40e87878d08198ed10b0cce6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IPOL register allows the user to configure the polarity on the corresponding GPIO port bits.  <a href="pu2clr__mcp23008_8h.html#af770bc40e87878d08198ed10b0cce6b7">More...</a><br /></td></tr>
 <tr class="separator:af770bc40e87878d08198ed10b0cce6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575e0c713d36d9de6d81f6b746574a7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pu2clr__mcp23008_8h.html#a575e0c713d36d9de6d81f6b746574a7b">REG_GPINTEN</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="memdesc:a575e0c713d36d9de6d81f6b746574a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GPINTEN register controls the interrupt-on-change feature for each pin.  <a href="pu2clr__mcp23008_8h.html#a575e0c713d36d9de6d81f6b746574a7b">More...</a><br /></td></tr>
@@ -123,7 +123,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:ad04ccdae4910c0e9e6f3fccee6868fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The INTCON register controls how the associated pin value is compared for the interrupt-on-change feature.  <a href="pu2clr__mcp23008_8h.html#ad04ccdae4910c0e9e6f3fccee6868fde">More...</a><br /></td></tr>
 <tr class="separator:ad04ccdae4910c0e9e6f3fccee6868fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a497cb509be41c4e6de44d707234b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pu2clr__mcp23008_8h.html#a16a497cb509be41c4e6de44d707234b6">REG_IOCON</a>&#160;&#160;&#160;0x05</td></tr>
-<tr class="memdesc:a16a497cb509be41c4e6de44d707234b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IOCON register contains several bits for configuring the device.  <a href="pu2clr__mcp23008_8h.html#a16a497cb509be41c4e6de44d707234b6">More...</a><br /></td></tr>
+<tr class="memdesc:a16a497cb509be41c4e6de44d707234b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IOCON register contains several bits for configuring the device. See method: setIoCon.  <a href="pu2clr__mcp23008_8h.html#a16a497cb509be41c4e6de44d707234b6">More...</a><br /></td></tr>
 <tr class="separator:a16a497cb509be41c4e6de44d707234b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50665a2700493ae6c1d69adcf454e786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pu2clr__mcp23008_8h.html#a50665a2700493ae6c1d69adcf454e786">REG_GPPU</a>&#160;&#160;&#160;0x06</td></tr>
 <tr class="memdesc:a50665a2700493ae6c1d69adcf454e786"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GPPU register controls the pull-up resistors for the port pins.  <a href="pu2clr__mcp23008_8h.html#a50665a2700493ae6c1d69adcf454e786">More...</a><br /></td></tr>
@@ -265,7 +265,7 @@ Unimplemented. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The IPOL register allows the user to configure thepolarity on the corresponding GPIO port bits. </p>
+<p>The IPOL register allows the user to configure the polarity on the corresponding GPIO port bits. </p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ Unimplemented. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The IOCON register contains several bits for configuring the device. </p>
+<p>The IOCON register contains several bits for configuring the device. See method: setIoCon. </p>
 
 </div>
 </div>

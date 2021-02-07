@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "agimprst",
   1: "m",
   2: "p",
-  3: "gpst",
+  3: "gipst",
   4: "agir",
   5: "gr",
   6: "m"
