@@ -100,7 +100,7 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 
 The image below shows a basic MCP23008 application with LED. You can control up to 8 LEDs. The I2C bus address is set to 0x20. You can select another I2C address by dealing with the A0,A1 and A2 pins (from 0x20 to 0x27). This circuit uses the MCP23008 GPIO PINs as output.   
 
-![Basic Schematic with LEDs](https://github.com/pu2clr/MCP23008/blob/main/extras/images/basic_schematic.png)
+![Basic Schematic with LEDs](extras/images/basic_schematic.png)
 
 
 
@@ -112,7 +112,7 @@ You will find a greate project made by Nancy Daniels Yoga tha uses a dual encode
 
 <BR>
 
-![Nancy's dual encoder schematic with MCP23008](https://github.com/pu2clr/MCP23008/blob/main/extras/images/Nacy_dual_encoder_project_with_mcp23008%20.jpg)
+![Nancy's dual encoder schematic with MCP23008](extras/images/Nacy_dual_encoder_project_with_mcp23008%20.jpg)
 
 
 
