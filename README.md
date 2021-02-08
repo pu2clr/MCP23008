@@ -6,15 +6,17 @@ The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It 
 
 This Arduino library implements the most important functions available on MCP23008 device  and can be freely distributed using the MIT Free Software model. 
 
-[Copyright (c) 2021 Ricardo Lima Caratti]().
+[Copyright (c) 2021 Ricardo Lima Caratti](https://pu2clr.github.io/MCP23008/#mit-license).
 
 ## Contents
 
-1. [License Copyright]()
-2. [Labrary Features]()
-3. [Library Installation]()
-4. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
-5. [References]()
+1. [License Copyright](https://pu2clr.github.io/MCP23008/#mit-license)
+2. [Thanks](https://pu2clr.github.io/MCP23008/#thanks)
+3. [Labrary Features](https://pu2clr.github.io/MCP23008/#labrary-features)
+4. [Library Installation](https://pu2clr.github.io/SI4735/#library-installation)
+5. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
+6. [Basic Schematic](https://pu2clr.github.io/SI4735/#basic-schematic)
+7. [References](https://pu2clr.github.io/SI4735/#references)
 
 
 ## MIT License 
@@ -27,6 +29,11 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE ARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Thanks
+
+## Thanks
+
+* Mrs. [Nancy Gail](https://github.com/LadyRoninEngineer/Si473x) for sharing experiences and suggestions about the MCP23008 applications.
 
 ## Labrary Features
 
@@ -87,6 +94,14 @@ After, unzip the MCP23008-master.zip file in your Arduino Library folder.
 
 With that approach, you will have the __most current version__ of the library. However, __it may not be the most stable version__. This is because the current version is always in development. [Prefer releases](https://github.com/pu2clr/MCP23008/releases).
 Do you need some old version (release) of this library?  If yes, [check here](https://github.com/pu2clr/MCP23008/releases). 
+
+
+## Basic schematic
+
+The image below shows a basic MCP23008 application with LED. You can control up to 8 LEDs. The I2C bus address is set to 0x20. You can select another I2C address by dealing with the A0,A1 and A2 pins (from 0x20 to 0x27). 
+
+![Basic Schematic with LEDs](https://github.com/pu2clr/MCP23008/blob/main/extras/images/basic_schematic.png)
+
 
 
 ## References 
