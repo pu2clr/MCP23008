@@ -200,7 +200,7 @@ void MCP::invertGpioPolarity() {
  * @param polatity  sets the polarity of the INT output pin. 1 = Active-high; 0 = Active-low.
  * @param openDrainOutput configures the INT pin as an open-drain output. 1 = Open-drain output (overrides the INTPOL bit). 0 = Active driver output (INTPOL bit sets the polarity).
  */
-void MCP::setInterrupt(uint8_t polatity = 0, uint8_t openDrainOutput = 0) {
+void MCP::setInterrupt(uint8_t polatity , uint8_t openDrainOutput) {
     uint8_t intpol = polatity << 1;
     uint8_t odr = openDrainOutput << 2;
     uint8_t iocon = this->getRegister(REG_IOCON); // Gets the current value of the REG_IOCON register
@@ -240,6 +240,7 @@ void MCP::interruptGpioOn(uint8_t gpio, uint8_t bitCompare) {
     this->setRegister(REG_GPINTEN, reg); // Updates the values of the  GPINTEN register
 
     // Defines the criteria to launch the interrupt
+    bitX &=  (bitCompare << gpio); // Sets the GPIO port/pin to 1 or 0 dependeing on bitCompare
     reg = this->getRegister(REG_DEFVAL); // Gets the current values of REG_DEFVAL
     reg |= bitX;
     this->setRegister(REG_DEFVAL, reg);
