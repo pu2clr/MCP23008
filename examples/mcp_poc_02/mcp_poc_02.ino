@@ -36,7 +36,7 @@ void setup() {
     mcp.setRegister(REG_GPINTEN,0B01000001); // the pins 0 and 6 of MCP23008 GPIO pins are configured to lauch an interrupt
     mcp.setRegister(REG_DEFVAL,0B01000001);  // The pins 0 and 6 will be compared with 1. If it one of them was not equal to 1, than an interrupt will occur;
     mcp.setRegister(REG_INTCON,0); // Pin value is compared against the previous pin value.
-    mcp.setRegister(REG_INTF,0);
+    // mcp.setRegister(REG_INTF,0);
     Serial.print("\n**** Make some PCP23008 GPIO pin high ****\n");  
 
 }
@@ -47,13 +47,19 @@ void setup() {
  */
 void checkMCP() {
     mcp23008_event = true;
+    // noInterrupts();
 }
 
 void loop() {
 
     if ( mcp23008_event) { 
+        uint8_t intcap = mcp.getRegister(REG_INTCAP);
+        uint8_t intf = mcp.getRegister(REG_INTF);
         Serial.print("\nGPIO INPUT STATUS: ");
-        Serial.print(mcp.getRegister(REG_INTCAP), BIN);
+        Serial.print(intcap, BIN);
+        Serial.print(" - ");
+        Serial.print(intf, BIN);
         mcp23008_event = false;
+        // interrupts();
     }
 }

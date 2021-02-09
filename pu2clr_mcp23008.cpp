@@ -191,21 +191,55 @@ void MCP::invertGpioPolarity() {
 
 /**
  * @ingroup group01
+ * @brief Configures the MCP23008 interrupt feature.
+ * @details The INT output pin will be activated when an internal interrupt occurs. 
+ * @details The interrupt block can be configured by the following registers: GPINTEN, DEFVAL, INTCON and IOCON(ODRandINPOL).
+ * @details This method work on IOCON. 
+ * 
+ * @param polatity  sets the polarity of the INT output pin. 1 = Active-high; 0 = Active-low.
+ * @param openDrainOutput configures the INT pin as an open-drain output. 1 = Open-drain output (overrides the INTPOL bit). 0 = Active driver output (INTPOL bit sets the polarity).
+ */
+void MCP::setInterrupt(uint8_t polatity = 0, uint8_t openDrainOutput = 0) {
+    uint8_t intpol = polatity << 1;
+    uint8_t odr = openDrainOutput << 2;
+    uint8_t iocon = this->getRegister(REG_IOCON); // Gets the current value of the REG_IOCON register
+    iocon |= (intpol | odr);
+    this->setRegister(REG_IOCON, iocon); // Save the new REG_IOCON registervalue
+}
+
+/**
+ * @ingroup group01
  * @brief Sets the interrupt-on-change feature to a given GPIO pin 
  * @details The GPINTEN register controls the interrupt-on-change feature for each pin.
  * @details If a bit is set, the corresponding pin is enabled for interrupt-on-change. 
  * @details The DEFVAL and INTCON registers must also be configured if any pins are enabled for interrupt-on-change.
  * @details if you want to configure more than one GPIO at once, use the primitive  setRegister(REG_GPINTEN, reg);
+ * @details If enabled (via GPINTEN and INTCON) to compare against the DEFVAL register, an opposite value on the associated pin will cause an interrupt to occur.
  * 
  * @param gpio GPIO / PIN you want to configure
+ * @param bitCompare The default comparison bit value that should be configured in the DEFVAL register.  
  */
-void MCP::interruptGpioOn(uint8_t gpio) {
+void MCP::interruptGpioOn(uint8_t gpio, uint8_t bitCompare) {
     uint8_t reg;
+    uint8_t bitX; 
 
     if (gpio > 7)
         return;
 
+    bitX = 1 << gpio;
+    
+    // Sets the gpio pin as input
+    reg = this->getRegister(REG_IODIR); // Gets the current values of REG_IODIR
+    reg |= bitX;
+    this->setRegister(REG_IODIR, reg); // Updates the values of the  REG_IODIR register
+
+    // Enables the GPIO pin to deal with interrupt  
     reg = this->getRegister(REG_GPINTEN); // Gets the current values of GPINTEN
-    reg |= 1 << gpio;
+    reg |= bitX;
     this->setRegister(REG_GPINTEN, reg); // Updates the values of the  GPINTEN register
+
+    // Defines the criteria to launch the interrupt
+    reg = this->getRegister(REG_DEFVAL); // Gets the current values of REG_DEFVAL
+    reg |= bitX;
+    this->setRegister(REG_DEFVAL, reg);
 }
