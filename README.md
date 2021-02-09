@@ -76,9 +76,28 @@ You can install this library on your Arduino environment using different methods
 
 This is the easiest method to install this library.
 
-On Arduino IDE, select the __"Manager Libraries..."__ iten and look for MCP23008. Finally select "PU2CLR MCP23008". 
+On Arduino IDE, select the __"Manager Libraries..."__ iten and look for MCP23008. Finally select "PU2CLR MCP23008". The images below show the installation process. 
+
+
+#### Going to Manager libraries...
+
+![Basic Schematic with LEDs](extras/images/install_lib_01.png)
+
+
+#### Looking for MCP23008
+
+![Basic Schematic with LEDs](extras/images/install_lib_02.png)
+
+
+#### Checking the PU2CLR_MCP23008 examples
+
+![Basic Schematic with LEDs](extras/images/install_lib_03.png)
+
+
+#### More information
 
 See also [Installing an Arduino Library ](https://learn.sparkfun.com/tutorials/installing-an-arduino-library/using-the-arduino-library-manager)
+
 
 
 ### Installing via this repository 
@@ -125,6 +144,24 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 
 
 ![Basic Schematic with LEDs](extras/images/basic_schematic_input.png)
+
+
+#### Arduino setup suggestion
+
+```cpp
+#include <pu2clr_mcp23008.h>
+
+MCP mcp;
+
+void setup() {
+  mcp.setup(0x20, 0B00001111); // I2C Address 0x20, GPIO 0-3 are output and  4-7 are input
+```
+
+You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
+
+```cpp
+    mcp.setRegister(REG_IODIR, 0B00001111);    // Sets  GPIO pins 0 and 7 to output
+```
 
 
 
