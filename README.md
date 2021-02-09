@@ -103,6 +103,23 @@ The image below shows a basic MCP23008 application with LED. You can control up 
 ![Basic Schematic with LEDs](extras/images/basic_schematic_output.png)
 
 
+#### Arduino setup suggestion
+
+```cpp
+#include <pu2clr_mcp23008.h>
+
+MCP mcp;
+
+void setup() {
+  mcp.setup(0x20, 0); // I2C Address 0x20 and all GPIO pins configured to output
+```
+
+You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
+
+```cpp
+    mcp.setRegister(REG_IODIR, 0B10000001);    // Sets  GPIO pins 0 and 7 to output
+```
+
 
 ### GPIO as input setup
 
