@@ -148,6 +148,7 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 
 #### Arduino setup suggestion
 
+```cpp
 void setup() {
   mcp.setup(0x20, 0B11111111); // I2C Address 0x20 and all GPIO pins configured to input
 ```
