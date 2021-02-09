@@ -1,12 +1,17 @@
 
-#include "pu2clr_mcp23008.h"
+/**
+ * @file mcp_poc_01.ino
+ * @author Ricardo Lima Caratti (pu2clr@gmail.com)
+ * @brief GPIO pins as output setup 
+ * @details It is an example that shows how to use the MCP23008 GPIO pin as output
+ * @copyright Copyright (c) 2021
+ */
 
+#include <pu2clr_mcp23008.h>
 
 char sBuffer[80];
 
 MCP mcp;
-
-
 
 void setup() {
 
