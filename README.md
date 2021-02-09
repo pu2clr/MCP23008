@@ -136,7 +136,7 @@ void setup() {
 You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
 
 ```cpp
-    mcp.setRegister(REG_IODIR, 0B10000001);    // Sets  GPIO pins 0 and 7 to output
+    mcp.setRegister(REG_IODIR, 0B00000000);    // Sets  all GPIO pins to output
 ```
 
 
@@ -147,6 +147,23 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 
 
 #### Arduino setup suggestion
+
+void setup() {
+  mcp.setup(0x20, 0B11111111); // I2C Address 0x20 and all GPIO pins configured to input
+```
+
+You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
+
+```cpp
+    mcp.setRegister(REG_IODIR, 0B11111111);    // Sets  all GPIO pins to input
+```
+
+
+### GPIO as input and output setup
+
+
+![Basic Schematic with LEDs](extras/images/basic_schematic_io.png)
+
 
 ```cpp
 #include <pu2clr_mcp23008.h>
@@ -162,14 +179,6 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 ```cpp
     mcp.setRegister(REG_IODIR, 0B00001111);    // Sets  GPIO pins 0 and 7 to output
 ```
-
-
-
-### GPIO as input and output setup
-
-
-![Basic Schematic with LEDs](extras/images/basic_schematic_io.png)
-
 
 
 
