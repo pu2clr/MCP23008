@@ -133,8 +133,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:gac03586dc0fd4cb9ff2f4e49b84ec8f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the interrupt-on-change feature to a given GPIO pin.  <a href="group__group01.html#gac03586dc0fd4cb9ff2f4e49b84ec8f91">More...</a><br /></td></tr>
 <tr class="separator:gac03586dc0fd4cb9ff2f4e49b84ec8f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe">getGPIOS</a> ()</td></tr>
-<tr class="memdesc:ga0cb2b67c45363a172323bf51f18b51fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current <a class="el" href="class_m_c_p.html">MCP</a> GPIO pin levels.  <a href="group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe">More...</a><br /></td></tr>
+<tr class="memdesc:ga0cb2b67c45363a172323bf51f18b51fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="class_m_c_p.html">MCP</a> GPIO pin levels.  <a href="group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe">More...</a><br /></td></tr>
 <tr class="separator:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a">getINTCAP</a> ()</td></tr>
+<tr class="memdesc:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTCAP register (value immediately after the last interrupt event)  <a href="group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a">More...</a><br /></td></tr>
+<tr class="separator:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">getINTF</a> ()</td></tr>
+<tr class="memdesc:gaba009d1ccd18c43e2451c86f72db2de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTCAP register (value immediately after the last interrupt event)  <a href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">More...</a><br /></td></tr>
+<tr class="separator:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -142,6 +148,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a661ef40042948051e9addd4891e66460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accfcacc44509bb19a411856f91f4568a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#accfcacc44509bb19a411856f91f4568a">gpios</a> = 0</td></tr>
 <tr class="separator:accfcacc44509bb19a411856f91f4568a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ed3497273efa5b13d15c5d813edff4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#a93ed3497273efa5b13d15c5d813edff4">intcap</a> = 0</td></tr>
+<tr class="separator:a93ed3497273efa5b13d15c5d813edff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9321bdb23184865e36e329fac2f32309"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#a9321bdb23184865e36e329fac2f32309">intf</a> = 0</td></tr>
+<tr class="separator:a9321bdb23184865e36e329fac2f32309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a661ef40042948051e9addd4891e66460"></a>
@@ -177,6 +187,50 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint8_t MCP::gpios = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93ed3497273efa5b13d15c5d813edff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ed3497273efa5b13d15c5d813edff4">&#9670;&nbsp;</a></span>intcap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MCP::intcap = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9321bdb23184865e36e329fac2f32309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9321bdb23184865e36e329fac2f32309">&#9670;&nbsp;</a></span>intf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MCP::intf = 0</td>
         </tr>
       </table>
   </td>
