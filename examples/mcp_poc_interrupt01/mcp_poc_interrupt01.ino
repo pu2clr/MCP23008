@@ -25,6 +25,7 @@ void setup() {
       
     mcp.setup(); 
     mcp.setInterrupt(1,1); // Defines the behaviour of the interrupt
+    
     // GPIO pin 1 setup
     mcp.pullUpGpioOn(1);   // Enables internal pullup resistor on gpio pin 1 
     mcp.interruptGpioOn(1,1); // Sets the GPIO pin 1 to deal with interrupt. The pin 1 will be compared with the value 1. It will be launch an interrupt if the pin 1 goes to level 0.
