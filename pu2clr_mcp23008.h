@@ -55,6 +55,8 @@ class MCP
 protected:
    uint8_t i2cAddress = 0x20; // Default i2c address
    uint8_t gpios = 0;         // REG_GPIO shadow register
+   uint8_t intcap = 0;
+   uint8_t intf = 0;
 
 public:
    void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT);
@@ -72,12 +74,37 @@ public:
 
    /**
      * @ingroup group01
-     * @brief Return the current MCP GPIO pin levels 
+     * @brief Returns the current MCP GPIO pin levels 
      * 
      * @return uint8_t 
      */
    inline uint8_t getGPIOS()
    {
+      this->gpios = getRegister(REG_GPIO);
       return this->gpios;
+   };
+
+   /**
+     * @ingroup group01
+     * @brief Returns the last value of INTCAP register (value immediately after the last interrupt event)
+     * 
+     * @return uint8_t 
+     */
+   inline uint8_t getINTCAP()
+   {
+      this->intcap = getRegister(REG_INTCAP);
+      return this->intcap;
+   };
+
+   /**
+     * @ingroup group01
+     * @brief Returns the last value of INTCAP register (value immediately after the last interrupt event)
+     * @details The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register. A ‘set’ bit indicates that the associated pin caused the interrupt.
+     * @return uint8_t 
+     */
+   inline uint8_t getINTF()
+   {
+      this->intf = getRegister(REG_INTF);
+      return this->intf;
    };
 };

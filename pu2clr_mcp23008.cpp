@@ -45,6 +45,7 @@ void MCP::setup(uint8_t i2c, uint8_t io) {
  * @return uint8_t current register value
  */
 uint8_t MCP::getRegister(uint8_t reg) {
+    delayMicroseconds(6000);
     Wire.beginTransmission(this->i2cAddress);
     Wire.write(reg);
     Wire.endTransmission();
@@ -60,6 +61,7 @@ uint8_t MCP::getRegister(uint8_t reg) {
  * @param value value (8 bits)
  */
 void MCP::setRegister(uint8_t reg, uint8_t value) {
+    delayMicroseconds(6000);
     Wire.beginTransmission(this->i2cAddress);
     Wire.write(reg);
     Wire.write(value);
@@ -73,7 +75,6 @@ void MCP::setRegister(uint8_t reg, uint8_t value) {
  * @param value (8 bits)
  */
 void MCP::setGPIOS(uint8_t value) {
-    this->gpios = value;
     this->setRegister(REG_GPIO, value);
     Wire.beginTransmission(i2cAddress);
 }
@@ -227,7 +228,7 @@ void MCP::interruptGpioOn(uint8_t gpio, uint8_t bitCompare) {
         return;
 
     bitX = 1 << gpio;
-    
+
     // Sets the gpio pin as input
     reg = this->getRegister(REG_IODIR); // Gets the current values of REG_IODIR
     reg |= bitX;
@@ -242,4 +243,5 @@ void MCP::interruptGpioOn(uint8_t gpio, uint8_t bitCompare) {
     reg = this->getRegister(REG_DEFVAL); // Gets the current values of REG_DEFVAL
     reg |= bitX;
     this->setRegister(REG_DEFVAL, reg);
+
 }
