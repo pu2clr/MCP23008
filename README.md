@@ -15,8 +15,8 @@ This Arduino library implements the most important functions available on MCP230
 3. [Labrary Features](https://pu2clr.github.io/MCP23008/#labrary-features)
 4. [Library Installation](https://pu2clr.github.io/SI4735/#library-installation)
 5. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
-6. [Basic Schematic](https://pu2clr.github.io/SI4735/#basic-schematic)
-7. [References](https://pu2clr.github.io/SI4735/#references)
+6. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
+7. [References](https://pu2clr.github.io/MCP23008/#references)
 
 
 ## MIT License 
@@ -41,6 +41,7 @@ This library uses the I²C communication protocol and implements most important 
 * Reading and writing Access to all registers (0x00 ~ 0xA) 
 * Internal pull up GPIO resistors control
 * I2C address customization (0x20 ~ 0x27)
+* Internal Interrupt feature setup
  
 
 ### Registers
