@@ -1,5 +1,6 @@
 var class_m_c_p =
 [
+    [ "lookForDevice", "group__group01.html#ga05f1fbb2347e03149f82f4492200b147", null ],
     [ "setup", "group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c", null ],
     [ "setGPIOS", "group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd", null ],
     [ "getRegister", "group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920", null ],

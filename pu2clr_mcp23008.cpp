@@ -21,6 +21,27 @@
 
 /**
  * @ingroup group01
+ * @brief Look for MCP23008 device I2C Address
+ * @details This method will look for a valid MCP23008 device adress between 0x20 and 0x27 
+ * @return uint8_t the I2C address of the first MCP23008 device connect in the I2C bus
+ */
+uint8_t MCP::lookForDevice() {
+    int err = 0;
+    Wire.begin();
+    for (int addr = 0x20; addr <= 0x27; addr++)
+    {
+        Wire.beginTransmission(addr);
+        err = Wire.endTransmission();
+        if (err == 0)
+            return addr;
+    }
+    // Any MCP23008 device was found
+    return 0;
+}
+
+
+/**
+ * @ingroup group01
  * @brief Starts the MCP23008 
  * @details Starts the MCP23008 and sets the default values. 
  * @param i2c I2C address (0x20 ~ 0x27) - default 0x20

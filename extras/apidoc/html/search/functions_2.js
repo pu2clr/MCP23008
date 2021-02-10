@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pullupgpiooff_51',['pullUpGpioOff',['../group__group01.html#gab669a85d10e0c8372babed1c49ffb5ed',1,'MCP']]],
-  ['pullupgpioon_52',['pullUpGpioOn',['../group__group01.html#gad504a9ca7a1af1c98cabcf2f7c7a88c8',1,'MCP']]]
+  ['lookfordevice_52',['lookForDevice',['../group__group01.html#ga05f1fbb2347e03149f82f4492200b147',1,'MCP']]]
 ];

@@ -102,6 +102,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">MCP::getINTF</a> ()</td></tr>
 <tr class="memdesc:gaba009d1ccd18c43e2451c86f72db2de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTCAP register (value immediately after the last interrupt event)  <a href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">More...</a><br /></td></tr>
 <tr class="separator:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05f1fbb2347e03149f82f4492200b147"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga05f1fbb2347e03149f82f4492200b147">MCP::lookForDevice</a> ()</td></tr>
+<tr class="memdesc:ga05f1fbb2347e03149f82f4492200b147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for MCP23008 device I2C Address.  <a href="group__group01.html#ga05f1fbb2347e03149f82f4492200b147">More...</a><br /></td></tr>
+<tr class="separator:ga05f1fbb2347e03149f82f4492200b147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">MCP::setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>)</td></tr>
 <tr class="memdesc:gadb7256b4dbca399d6c917c0ddf44367c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">More...</a><br /></td></tr>
 <tr class="separator:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,6 +225,26 @@ Functions</h2></td></tr>
 
 <p>Returns the last value of INTCAP register (value immediately after the last interrupt event) </p>
 <p>The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register. A ‘set’ bit indicates that the associated pin caused the interrupt. </p><dl class="section return"><dt>Returns</dt><dd>uint8_t </dd></dl>
+
+</div>
+</div>
+<a id="ga05f1fbb2347e03149f82f4492200b147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05f1fbb2347e03149f82f4492200b147">&#9670;&nbsp;</a></span>lookForDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MCP::lookForDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look for MCP23008 device I2C Address. </p>
+<p>This method will look for a valid MCP23008 device adress between 0x20 and 0x27 </p><dl class="section return"><dt>Returns</dt><dd>uint8_t the I2C address of the first MCP23008 device connect in the I2C bus </dd></dl>
 
 </div>
 </div>

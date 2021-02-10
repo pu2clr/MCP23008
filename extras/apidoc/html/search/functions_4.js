@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['turngpiooff_58',['turnGpioOff',['../group__group01.html#ga09893717b6ae4b71455ea2a3657a88eb',1,'MCP']]],
-  ['turngpioon_59',['turnGpioOn',['../group__group01.html#ga0164b9f8c7ec58465d00b5761b5d4e0d',1,'MCP']]]
+  ['setgpios_55',['setGPIOS',['../group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd',1,'MCP']]],
+  ['setinterrupt_56',['setInterrupt',['../group__group01.html#ga6acb6478e2baa56b4a2834306f7e1963',1,'MCP']]],
+  ['setiocon_57',['setIoCon',['../group__group01.html#gad5ecb8741304bbaee9e1626f57efcdea',1,'MCP']]],
+  ['setregister_58',['setRegister',['../group__group01.html#gaba8f4501efb5a9772a5b7ec7a428ac4d',1,'MCP']]],
+  ['setup_59',['setup',['../group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c',1,'MCP']]]
 ];

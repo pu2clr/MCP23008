@@ -59,6 +59,7 @@ protected:
    uint8_t intf = 0;
 
 public:
+   uint8_t lookForDevice(); 
    void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT);
    void setGPIOS(uint8_t value);
    uint8_t getRegister(uint8_t reg);
