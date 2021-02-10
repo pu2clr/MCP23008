@@ -185,9 +185,9 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 
 ## References 
 
+* [MicroChip - MCP23008/MCP23S08 - 8-Bit I/O Expander with Serial Interface](https://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf)
+* [Nancy Daniels Yoga](https://github.com/LadyRoninEngineer/)  
 
-## Nancy Daniels Yoga 
-You will find a greate project made by Nancy Daniels Yoga tha uses a dual encoder conetrolled by Arduino. [Click here to find the circuit and source code project](https://github.com/LadyRoninEngineer/Si473x/tree/main/DualEncoder?fbclid=IwAR2mKtoJoSrB3h2w1bIsahIroshu2UAudA0tOVX7-EWtLmiEmW0SYPpmnIY). You can see the Nacy's circuit below. 
 
 <BR>
 
