@@ -189,9 +189,6 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 * [Nancy Daniels Yoga](https://github.com/LadyRoninEngineer/)  
 
 
-<BR>
-
-![Nancy's dual encoder schematic with MCP23008](extras/images/Nacy_dual_encoder_project_with_mcp23008%20.jpg)
 
 
 
