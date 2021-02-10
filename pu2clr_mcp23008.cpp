@@ -229,6 +229,7 @@ void MCP::interruptGpioOn(uint8_t gpio, uint8_t bitCompare) {
 
     bitX = 1 << gpio;
 
+
     // Sets the gpio pin as input
     reg = this->getRegister(REG_IODIR); // Gets the current values of REG_IODIR
     reg |= bitX;
@@ -240,9 +241,8 @@ void MCP::interruptGpioOn(uint8_t gpio, uint8_t bitCompare) {
     this->setRegister(REG_GPINTEN, reg); // Updates the values of the  GPINTEN register
 
     // Defines the criteria to launch the interrupt
-    bitX &=  (bitCompare << gpio); // Sets the GPIO port/pin to 1 or 0 dependeing on bitCompare
     reg = this->getRegister(REG_DEFVAL); // Gets the current values of REG_DEFVAL
-    reg |= bitX;
+    reg = (reg & (~bitX) ) | (bitCompare << gpio); // Turns high or low the given GPIO port/pin based on bitCompare
     this->setRegister(REG_DEFVAL, reg);
 
 }

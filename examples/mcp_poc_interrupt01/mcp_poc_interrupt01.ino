@@ -30,12 +30,11 @@ void setup() {
     mcp.pullUpGpioOn(1);   // Enables internal pullup resistor on gpio pin 1 
     mcp.interruptGpioOn(1,1); // Sets the GPIO pin 1 to deal with interrupt. The pin 1 will be compared with the value 1. It will be launch an interrupt if the pin 1 goes to level 0.
 
-
+ 
     // GPIO pin 5 setup
     mcp.pullUpGpioOn(5);   // Enables internal pullup resistor on gpio pin 5 
     mcp.interruptGpioOn(5,1); // Sets the GPIO pin 5 to deal with interrupt. The pin 5 will be compared with the value 1. It will be launch an interrupt if the pin 1 goes to level 0.
-
-    
+   
     Serial.print("\n**** Please, set the PCP23008 GPIO pin 1 or pin 6 high ****\n");  
     
     pinMode(ARDUINO_INTERRUPT_PIN, INPUT_PULLUP);
