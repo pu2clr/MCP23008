@@ -10,20 +10,21 @@ void loop() {
     for (uint8_t i = 0; i < 8; i++)
     {
         mcp.turnGpioOn(i); // Turns the GPIO / port i on
-        delay(1000);
+        delay(300);
         mcp.turnGpioOff(i); // Turns the GPIO / port i off
+        delay(300);
     }
     delay(2000);
     for (uint8_t i = 0; i < 8; i++)
     {
         mcp.turnGpioOn(i); // Turns the GPIO / port i on
-        delay(500);
+        delay(300);
     }
     delay(2000);
     for (uint8_t i = 0; i < 8; i++)
     {
         mcp.turnGpioOff(i); // Turns the GPIO / port i off
-        delay(500);
+        delay(300);
     }
-    delay(5000);
+    delay(2000);
 }
