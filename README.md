@@ -14,9 +14,10 @@ This Arduino library implements the most important functions available on MCP230
 2. [Thanks](https://pu2clr.github.io/MCP23008/#thanks)
 3. [Labrary Features](https://pu2clr.github.io/MCP23008/#labrary-features)
 4. [Library Installation](https://pu2clr.github.io/MCP23008/#library-installation)
-5. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
-6. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
-7. [References](https://pu2clr.github.io/MCP23008/#references)
+5. [Other Arduino Libraries developed by the Author](https://pu2clr.github.io/MCP23008/#Other arduino-libraries-developed-by-the-author)
+6. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
+7. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
+8. [References](https://pu2clr.github.io/MCP23008/#references)
 
 
 ## MIT License 
@@ -112,6 +113,18 @@ After, unzip the MCP23008-master.zip file in your Arduino Library folder.
 
 With that approach, you will have the __most current version__ of the library. However, __it may not be the most stable version__. This is because the current version is always in development. [Prefer releases](https://github.com/pu2clr/MCP23008/releases).
 Do you need some old version (release) of this library?  If yes, [check here](https://github.com/pu2clr/MCP23008/releases). 
+
+
+## Other Arduino Libraries by the author
+
+* [PU2CLR Si4735 Library for Arduino](https://pu2clr.github.io/SI4735/). This library was built based on “Si47XX PROGRAMMING GUIDE; AN332” and it has support to FM, AM and SSB modes (LW, MW and SW). It also can be used on all members of the SI47XX family respecting, of course, the features available for each IC version;
+* [PU2CLR SI4844 Arduino Library](https://github.com/pu2clr/SI4844). This is an Arduino library for the SI4844, BROADCAST ANALOG TUNING DIGITAL DISPLAY AM/FM/SW RADIO RECEIVER,  IC from Silicon Labs.  It is available on Arduino IDE. This library is intended to provide an easier interface for controlling the SI4844.
+* [PU2CLR AKC695X Arduino Library](https://pu2clr.github.io/AKC695X/). The AKC695X is a family of IC DSP receiver from AKC technology. The AKC6955 and AKC6959sx support AM and FM modes. On AM mode the AKC6955 and AKC6959sx work on LW, MW and SW. On FM mode they work from 64MHz to 222MHz.
+* [PU2CLR KT0915 Arduino Library](https://pu2clr.github.io/KT0915/). The KT0915 is a full band AM (LW, MW and SW) and FM DSP receiver that can provide you a easy way to build a high quality radio with low cost.
+* [PU2CLR BK108X](https://pu2clr.github.io/BK108X/). The BK1086 and BK1088 are DSP receivers from BAKEN. The BK1088 is a BROADCAST FM and AM (LW, MW and ) RECEIVER and BK1086 is a subset of the BK1088 (it does not have LW and SW acording to the Datasheet).
+* [PU2CLR RDA5807 Arduino Library](https://pu2clr.github.io/RDA5807/). The RDA5807 is a FM DSP integrated circuit receiver (50 to 115MHz) with low noise amplifier support. This device requires very few external components if compared with other similar devices. It also supports RDS/RBDS functionalities, direct auto gain control (AGC) and real time adaptive noise cancellation function.
+* [PU2CLR SI470X Arduino Library](https://pu2clr.github.io/SI470X/). It is a Silicon Labs device family that integrates the complete functionalities for FM receivers, including RDS (Si4703).
+[PU2CLR MCP23008](https://pu2clr.github.io/MCP23008/).It is an Arduino Library to control the MCP23008/MCP23S08 8-Bit I/O Expander. The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I2C bus applications. It is a great and inexpensive device that allow you to add more devices to be controlled by your Arduino board via I2C protocol.
 
 
 ## Basic schematic
