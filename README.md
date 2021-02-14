@@ -1,6 +1,6 @@
 # [PU2CLR - MCP23008 Arduino Library](https://pu2clr.github.io/MCP23008/)
 
-It is an Arduino Library to control the MCP23008/MCP23S08 8-Bit I/O Expander. 
+It is an Arduino Library to control the MCP23008 8-Bit I/O Expander. 
 
 The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I²C bus applications. It is a great and inexpensive device that allow you to add more peripherals to be controlled by your Arduino board via I²C protocol.
 
