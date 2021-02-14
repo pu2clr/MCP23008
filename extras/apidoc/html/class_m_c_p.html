@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PU2CLR MCP23008 Arduino Library
-   &#160;<span id="projectnumber">1.0.1</span>
+   &#160;<span id="projectnumber">1.0.3</span>
    </div>
    <div id="projectbrief">Arduino Library for MCP23008 Device - By Ricardo Lima Caratti</div>
   </td>
@@ -102,9 +102,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>)</td></tr>
 <tr class="memdesc:gadb7256b4dbca399d6c917c0ddf44367c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">More...</a><br /></td></tr>
 <tr class="separator:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd">setGPIOS</a> (uint8_t value)</td></tr>
-<tr class="memdesc:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value to the GPIO Register.  <a href="group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd">More...</a><br /></td></tr>
-<tr class="separator:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">getRegister</a> (uint8_t reg)</td></tr>
 <tr class="memdesc:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the corrent register information.  <a href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">More...</a><br /></td></tr>
 <tr class="separator:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,9 +132,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gac03586dc0fd4cb9ff2f4e49b84ec8f91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gac03586dc0fd4cb9ff2f4e49b84ec8f91">interruptGpioOn</a> (uint8_t gpio, uint8_t bitCompare=1)</td></tr>
 <tr class="memdesc:gac03586dc0fd4cb9ff2f4e49b84ec8f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the interrupt-on-change feature to a given GPIO pin.  <a href="group__group01.html#gac03586dc0fd4cb9ff2f4e49b84ec8f91">More...</a><br /></td></tr>
 <tr class="separator:gac03586dc0fd4cb9ff2f4e49b84ec8f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2306ecdd30676c6c4ee4ce072524ca59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga2306ecdd30676c6c4ee4ce072524ca59">gpioRead</a> (uint8_t gpio)</td></tr>
+<tr class="memdesc:ga2306ecdd30676c6c4ee4ce072524ca59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the status (high or low) or a given GPIO.  <a href="group__group01.html#ga2306ecdd30676c6c4ee4ce072524ca59">More...</a><br /></td></tr>
+<tr class="separator:ga2306ecdd30676c6c4ee4ce072524ca59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c059afd5b8102cc62ebb0058ec62961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga6c059afd5b8102cc62ebb0058ec62961">gpioWrite</a> (uint8_t gpio, uint8_t value)</td></tr>
+<tr class="memdesc:ga6c059afd5b8102cc62ebb0058ec62961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a given value (high(1) or low(0) ) to a given gpio pin.  <a href="group__group01.html#ga6c059afd5b8102cc62ebb0058ec62961">More...</a><br /></td></tr>
+<tr class="separator:ga6c059afd5b8102cc62ebb0058ec62961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe">getGPIOS</a> ()</td></tr>
 <tr class="memdesc:ga0cb2b67c45363a172323bf51f18b51fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="class_m_c_p.html">MCP</a> GPIO pin levels.  <a href="group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe">More...</a><br /></td></tr>
 <tr class="separator:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd">setGPIOS</a> (uint8_t value)</td></tr>
+<tr class="memdesc:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value to the GPIO Register.  <a href="group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd">More...</a><br /></td></tr>
+<tr class="separator:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a">getINTCAP</a> ()</td></tr>
 <tr class="memdesc:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTCAP register (value immediately after the last interrupt event)  <a href="group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a">More...</a><br /></td></tr>
 <tr class="separator:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="memSeparator" colspan="2">&#160;</td></tr>

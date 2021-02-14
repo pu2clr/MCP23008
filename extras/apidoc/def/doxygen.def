@@ -66,31 +66,6 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga9d0c5ff49456ba2016efb6dc56ddb1cd';
-      sec-mem-virt = normal;
-      sec-mem-prot = public;
-      sec-mem-type = <<_EnD_oF_dEf_TeXt_
-void
-_EnD_oF_dEf_TeXt_;
-      sec-mem-name = 'setGPIOS';
-      sec-mem-param = {
-        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
-uint8_t
-_EnD_oF_dEf_TeXt_;
-        sec-mem-param-declname = 'value';
-      }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '64';
-      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Sets a value to the GPIO Register.
-_EnD_oF_dEf_TeXt_;
-      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-A direct way to set a given value to deal with the GPIOs pins.
-@param value (8 bits)
-_EnD_oF_dEf_TeXt_;
-    }; /* sec-member */
-    sec-member = {
-      sec-mem-kind = 'function';
       sec-mem-id   = 'group__group01_1ga490e4a6820e3a2e0dd86c1a7aa5bb920';
       sec-mem-virt = normal;
       sec-mem-prot = public;
@@ -105,7 +80,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'reg';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '65';
+      sec-mem-desc-line = '64';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the corrent register information.
 _EnD_oF_dEf_TeXt_;
@@ -137,7 +112,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'value';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '66';
+      sec-mem-desc-line = '65';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets a value to a given register.
 _EnD_oF_dEf_TeXt_;
@@ -164,7 +139,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '67';
+      sec-mem-desc-line = '66';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns a given GPIO port on (high level)
 _EnD_oF_dEf_TeXt_;
@@ -189,7 +164,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '68';
+      sec-mem-desc-line = '67';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns a given GPIO port off (low level)
 _EnD_oF_dEf_TeXt_;
@@ -214,7 +189,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '69';
+      sec-mem-desc-line = '68';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns intenal pull up resistor ON  to  a given GPIO PIN (high level)
 _EnD_oF_dEf_TeXt_;
@@ -239,7 +214,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'gpio';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '70';
+      sec-mem-desc-line = '69';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Turns intenal pull up resistor OFF  to a given GPIO PIN (low level)
 _EnD_oF_dEf_TeXt_;
@@ -288,7 +263,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'SEQOP';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '71';
+      sec-mem-desc-line = '70';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets the IO Configurarion gerister.
 _EnD_oF_dEf_TeXt_;
@@ -333,7 +308,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'invertGpioPolarity';
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '72';
+      sec-mem-desc-line = '71';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Inverts the polarity of the <strong>all</strong> GPIO port bits.
 _EnD_oF_dEf_TeXt_;
@@ -376,7 +351,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '73';
+      sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Configures the MCP23008 interrupt feature.
 _EnD_oF_dEf_TeXt_;
@@ -418,7 +393,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '74';
+      sec-mem-desc-line = '73';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets the interrupt-on-change feature to a given GPIO pin.
 _EnD_oF_dEf_TeXt_;
@@ -444,6 +419,63 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
+      sec-mem-id   = 'group__group01_1ga2306ecdd30676c6c4ee4ce072524ca59';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'gpioRead';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+uint8_t
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'gpio';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reads the status (high or low) or a given GPIO.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Returns true if the gpio is hight or fale if it is low.
+@param gpio pin number
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'group__group01_1ga6c059afd5b8102cc62ebb0058ec62961';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'gpioWrite';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+uint8_t
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'gpio';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+uint8_t
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'value';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Sets a given value (high(1) or low(0) ) to a given gpio pin.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+It is like the turnGpioOn()
+@param gpio pin number
+@param value 1 = High;  0 =  Low 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
       sec-mem-id   = 'group__group01_1ga0cb2b67c45363a172323bf51f18b51fe';
       sec-mem-virt = normal;
       sec-mem-prot = public;
@@ -452,12 +484,37 @@ uint8_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'getGPIOS';
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '82';
+      sec-mem-desc-line = '83';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the current MCP GPIO pin levels.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 @return uint8_t 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'group__group01_1ga9d0c5ff49456ba2016efb6dc56ddb1cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setGPIOS';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+uint8_t
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'value';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
+      sec-mem-desc-line = '95';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Sets a value to the GPIO Register.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+A direct way to set a given value to deal with the GPIOs pins.
+@param value (8 bits)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -470,7 +527,7 @@ uint8_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'getINTCAP';
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '94';
+      sec-mem-desc-line = '105';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the last value of INTCAP register (value immediately after the last interrupt event)
 _EnD_oF_dEf_TeXt_;
@@ -488,7 +545,7 @@ uint8_t
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'getINTF';
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
-      sec-mem-desc-line = '106';
+      sec-mem-desc-line = '117';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the last value of INTCAP register (value immediately after the last interrupt event)
 _EnD_oF_dEf_TeXt_;
