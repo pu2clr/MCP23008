@@ -253,7 +253,7 @@ The prototype below is based on the GPIO as input and output setup schematic
 
 ## Internal Interrupt setup
 
-The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from high to low or from low to high). This library has some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/). 
+The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from high to low or from low to high). This library implements some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/). 
 
 The code below shows how to setup internal interrupt on given GPIO pin. Observe the MCP23008 internal pullup configured before configuring the interrupt. In this setup, the gpio
 
