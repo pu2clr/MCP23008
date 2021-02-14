@@ -89,16 +89,6 @@ void MCP::setRegister(uint8_t reg, uint8_t value) {
     Wire.endTransmission(); //ends communication with the device
 }
 
-/**
- * @ingroup group01
- * @brief Sets a value to the GPIO Register
- * @details A direct way to set a given value to deal with the GPIOs pins.
- * @param value (8 bits)
- */
-void MCP::setGPIOS(uint8_t value) {
-    this->setRegister(REG_GPIO, value);
-    Wire.beginTransmission(i2cAddress);
-}
 
 /**
  * @ingroup group01
@@ -130,6 +120,32 @@ void MCP::turnGpioOff(uint8_t gpio)
         return;
     gpios = gpios ^ b;
     this->setGPIOS(gpios);
+}
+
+/**
+ * @ingroup group01
+ * @brief Reads the status (high or low) or a given GPIO
+ * @details Returns true if the gpio is hight or fale if it is low.
+ * @param gpio pin number
+ */
+bool MCP::gpioRead(uint8_t gpio) {
+    // Checks if it is already OFF
+    if (gpio > 7) return false;
+    return getRegister(REG_GPIO) & (1 << gpio);
+}
+
+/**
+ * @ingroup group01
+ * @brief Sets a given value (high(1) or low(0) ) to a given gpio pin
+ * @details It is like the turnGpioOn()
+ * @param gpio pin number
+ * @param value 1 = High;  0 =  Low 
+ */
+void MCP::gpioWrite(uint8_t gpio, uint8_t value) {
+    if (gpio > 7)
+        return;
+    uint8_t currentGpio = this->getRegister(REG_GPIO) ;
+    this->setRegister(REG_GPIO, (currentGpio & ~(1 << gpio)) | (value << gpio) );
 }
 
 /**

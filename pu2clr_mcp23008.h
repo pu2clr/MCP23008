@@ -61,7 +61,6 @@ protected:
 public:
    uint8_t lookForDevice(); 
    void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT);
-   void setGPIOS(uint8_t value);
    uint8_t getRegister(uint8_t reg);
    void setRegister(uint8_t reg, uint8_t value);
    void turnGpioOn(uint8_t gpio);
@@ -72,18 +71,30 @@ public:
    void invertGpioPolarity();
    void setInterrupt(uint8_t polatity = 0, uint8_t openDrainOutput = 0);
    void interruptGpioOn(uint8_t gpio, uint8_t bitCompare = 1) ;
+   bool gpioRead(uint8_t gpio);
+   void gpioWrite(uint8_t gpio, uint8_t value);
 
    /**
-     * @ingroup group01
-     * @brief Returns the current MCP GPIO pin levels 
-     * 
-     * @return uint8_t 
-     */
+   * @ingroup group01
+   * @brief Returns the current MCP GPIO pin levels 
+   * 
+   * @return uint8_t 
+   */
    inline uint8_t getGPIOS()
    {
       this->gpios = getRegister(REG_GPIO);
       return this->gpios;
    };
+
+   /**
+   * @ingroup group01
+   * @brief Sets a value to the GPIO Register
+   * @details A direct way to set a given value to deal with the GPIOs pins.
+   * @param value (8 bits)
+   */
+   inline void setGPIOS(uint8_t value) {
+       this->setRegister(REG_GPIO, value);
+   }
 
    /**
      * @ingroup group01
@@ -108,4 +119,5 @@ public:
       this->intf = getRegister(REG_INTF);
       return this->intf;
    };
+
 };

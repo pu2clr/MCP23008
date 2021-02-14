@@ -230,6 +230,8 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
     mcp.setRegister(REG_IODIR, 0B00001111);    // Sets  GPIO pins 0-3 to output and  GPIO pins 4-7 to input
 ```
 
+see 
+
 
 
 ## References 
