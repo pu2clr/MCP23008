@@ -44,7 +44,7 @@
 #define GPIO6 6
 #define GPIO7 7
 
-#define GET_BIT_CONTENT(x,y) ( x & (1 << y) )  // 0 or != 0
+#define CHECK_BIT_HIGH(x,y) ( x & (1 << y) )  // Check if a bit is high. Returns 0 or != 0
 
 
 /**

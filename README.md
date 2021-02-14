@@ -17,7 +17,8 @@ This Arduino library implements the most important functions available on MCP230
 5. [Other Arduino Libraries developed by the Author](https://pu2clr.github.io/MCP23008/#Other arduino-libraries-developed-by-the-author)
 6. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
 7. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
-8. [References](https://pu2clr.github.io/MCP23008/#references)
+8. [Internal Interrupt setup]() 
+9. [References](https://pu2clr.github.io/MCP23008/#references)
 
 
 ## MIT License 
@@ -246,6 +247,16 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 The prototype below is based on the GPIO as input and output setup schematic
 
 ![Basic prototype based on input / output schematic](extras/images/mcp_input_output1.png)
+
+
+
+## Internal Interrupt setup
+
+The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from higt to low or from low to high). This library some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/) 
+
+
+
+
 
 
 ## References 
