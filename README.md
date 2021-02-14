@@ -230,7 +230,7 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
     mcp.setRegister(REG_IODIR, 0B00001111);    // Sets  GPIO pins 0-3 to output and  GPIO pins 4-7 to input
 ```
 
-see 
+#### [See iput/output sketch example](https://github.com/pu2clr/MCP23008/tree/main/examples/mcp_poc_03_input_output) 
 
 
 
