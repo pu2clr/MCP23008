@@ -30,6 +30,20 @@
 #define GPIO_INPUT 0xFF
 #define GPIO_OUTPUT 0x00
 
+#define INTERRUPT_ODR_OPEN_DRAIN 1     //!< Open-drain output (overrides the INTPOL bit).
+#define INTERRUPT_ODR_ACTIVE_DRIVE 0   //!< Active driver output (INTPOL bit sets the polarity).
+#define INTERRUPT_INTPOL_ACTIVE_HIGH 1 //!< Active high - polarity of the INT output pin
+#define INTERRUPT_INTPOL_ACTIVE_LOW 0  //!< Active low  - polarity of the INT output pin
+
+#define GPIO0 0
+#define GPIO1 1
+#define GPIO2 2
+#define GPIO3 3
+#define GPIO4 4
+#define GPIO5 5
+#define GPIO6 6
+#define GPIO7 7
+
 /**
  * @brief IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05)
  * @details The IOCON register contains several bits for configuring the device. 
