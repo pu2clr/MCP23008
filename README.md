@@ -18,7 +18,8 @@ This Arduino library implements the most important functions available on MCP230
 7. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
 8. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
 9. [Internal Interrupt setup](https://pu2clr.github.io/MCP23008/#internal-interrupt-setup) 
-10. [References](https://pu2clr.github.io/MCP23008/#references)
+10. [MCP23008 reset control](https://pu2clr.github.io/MCP23008/#mcp23008-reset-control)
+11. [References](https://pu2clr.github.io/MCP23008/#references)
 
 
 ## MIT License 
@@ -252,7 +253,7 @@ The prototype below is based on the GPIO as input and output setup schematic
 
 ## Internal Interrupt setup
 
-The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from higt to low or from low to high). This library some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/). 
+The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from high to low or from low to high). This library has some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/). 
 
 The code below shows how to setup internal interrupt on given GPIO pin. Observe the MCP23008 internal pullup configured before configuring the interrupt. In this setup, the gpio
 
@@ -273,6 +274,32 @@ The code below shows how to setup internal interrupt on given GPIO pin. Observe 
 ```
 
 Again. see also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt02](examples/) for more details. These examples use the GPIO as input and output setup schematic.
+
+
+## MCP23008 reset control
+
+In most applications you can use the MC23008 reset pin directly connected to the VCC. __You can also connect the MCP23008 RESET pin to the Arduino RESET pin (It is better than previous setup)__. 
+However, you might need to control the reset  via your Arduino sketch. If so, check the setup and reset functions to do that on [MCP23008 library API Documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  The code below shows the RESET setup on Arduino and MCP23008.
+
+```cpp
+#include <pu2clr_mcp23008.h>
+
+#define RESET_PIN 12  // Arduino pin 12 will be used to control the MCP23008 RESET
+
+MCP mcp;
+
+
+void setup() {
+
+  mcp.setup(0x20, 0B00001111, RESET_PIN);  // GPIO 0 to 3 are input (buttons) and 4 to 7 are output (LEDs)
+  mcp.setRegister(REG_GPPU, 0B00001111); // sets GPIO 0 to 3 with internal pull up resistors
+
+  .
+  .  
+  . 
+  mcp.reset();  // the setup function above already called the MCP23008 reset. But you can also call reset function if you need it in other situation
+
+```
 
 
 
