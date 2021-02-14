@@ -234,6 +234,13 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 
 
 
+## Prototype 
+
+The prototype below is based on the GPIO as input and output setup schematic
+
+![Basic prototype based on input / output schematic](extras/images/mcp_input_output1.png)
+
+
 ## References 
 
 * [MicroChip - MCP23008/MCP23S08 - 8-Bit I/O Expander with Serial Interface](https://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf)
