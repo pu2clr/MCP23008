@@ -98,11 +98,13 @@ void MCP::setRegister(uint8_t reg, uint8_t value) {
  */
 void MCP::turnGpioOn(uint8_t gpio)
 {
-    uint8_t b = (1 << gpio);
     // Checks if it is already ON (avoid trafic on I2C)
-    if ( (bool)(gpios & b) || gpio > 7 )
+    if ( gpio > 7 )
         return;
-    gpios = gpios | b;
+
+    uint8_t b = (1 << gpio);
+
+    gpios = this->getGPIOS() | b;
     this->setGPIOS(gpios);
 }
 
@@ -114,11 +116,11 @@ void MCP::turnGpioOn(uint8_t gpio)
  */
 void MCP::turnGpioOff(uint8_t gpio)
 {
-    uint8_t b = (1 << gpio);
     // Checks if it is already OFF
-    if ((gpios & b) == 0 || gpio > 7)
+    if (gpio > 7)
         return;
-    gpios = gpios ^ b;
+    uint8_t b = (1 << gpio);    
+    gpios = this->getGPIOS() & ~b;
     this->setGPIOS(gpios);
 }
 
