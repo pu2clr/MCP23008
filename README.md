@@ -47,7 +47,6 @@ This library uses the I²C communication protocol and implements most important 
 
 ## Demo video 
 
-<BR>
 {% include video01.html %}
 
 [See on Youtube](https://youtu.be/rNnMtvlUPgk)
