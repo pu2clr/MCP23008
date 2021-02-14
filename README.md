@@ -273,7 +273,10 @@ The code below shows how to setup internal interrupt on given GPIO pin. Observe 
 
 ```
 
-Again. see also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt02](examples/) for more details. These examples use the GPIO as input and output setup schematic.
+Again. see also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt02](examples/) for more details. The schematic below can be used to check MCP23008 interrupt applications.
+
+
+![Basic prototype based on input / output schematic](extras/images/basic_schematic_interrupt.png)
 
 
 ## MCP23008 reset control
