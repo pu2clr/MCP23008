@@ -2,9 +2,9 @@
 
 It is an Arduino Library to control the MCP23008/MCP23S08 8-Bit I/O Expander. 
 
-The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I2C bus applications. It is a great and inexpensive device that allow you to add more peripherals to be controlled by your Arduino board via I2C protocol.
+The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I²C bus applications. It is a great and inexpensive device that allow you to add more peripherals to be controlled by your Arduino board via I²C protocol.
 
-Some Arduino projects may require more pins than the Arduino actually has. In these cases, you can use up to 8 MCP23008 devices using only the I2C bus (two Arduino pins) and add up to 64 input / output ports to your project. 
+Some Arduino projects may require more pins than the Arduino actually has. In these cases, you can use up to 8 MCP23008 devices using only the I²C bus (two Arduino pins) and add up to 64 input / output ports to your project. 
 
 
 This Arduino library implements the most important functions available on MCP23008 device  and can be freely distributed using the MIT Free Software model. 
@@ -46,7 +46,7 @@ This library uses the I²C communication protocol and implements most important 
 * GPIO individual control (8 I/O pins)
 * Reading and writing Access to all registers (0x00 ~ 0xA) 
 * Internal pull up GPIO resistors control
-* I2C address customization (0x20 ~ 0x27)
+* I²C address customization (0x20 ~ 0x27)
 * Internal Interrupt feature setup
  
 
@@ -136,12 +136,12 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 * [PU2CLR BK108X](https://pu2clr.github.io/BK108X/). The BK1086 and BK1088 are DSP receivers from BAKEN. The BK1088 is a BROADCAST FM and AM (LW, MW and ) RECEIVER and BK1086 is a subset of the BK1088 (it does not have LW and SW acording to the Datasheet).
 * [PU2CLR RDA5807 Arduino Library](https://pu2clr.github.io/RDA5807/). The RDA5807 is a FM DSP integrated circuit receiver (50 to 115MHz) with low noise amplifier support. This device requires very few external components if compared with other similar devices. It also supports RDS/RBDS functionalities, direct auto gain control (AGC) and real time adaptive noise cancellation function.
 * [PU2CLR SI470X Arduino Library](https://pu2clr.github.io/SI470X/). It is a Silicon Labs device family that integrates the complete functionalities for FM receivers, including RDS (Si4703).
-[PU2CLR MCP23008](https://pu2clr.github.io/MCP23008/).It is an Arduino Library to control the MCP23008/MCP23S08 8-Bit I/O Expander. The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I2C bus applications. It is a great and inexpensive device that allow you to add more devices to be controlled by your Arduino board via I2C protocol.
+[PU2CLR MCP23008](https://pu2clr.github.io/MCP23008/).It is an Arduino Library to control the MCP23008/MCP23S08 8-Bit I/O Expander. The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I²C bus applications. It is a great and inexpensive device that allow you to add more devices to be controlled by your Arduino board via I²C protocol.
 
 
 ## Basic schematic
 
-The image below shows a basic MCP23008 application with LED. You can control up to 8 LEDs. The I2C bus address is set to 0x20. You can select another I2C address by dealing with the A0,A1 and A2 pins (from 0x20 to 0x27). This circuit uses the MCP23008 GPIO PINs as output.   
+The image below shows a basic MCP23008 application with LED. You can control up to 8 LEDs. The I²C bus address is set to 0x20. You can select another I²C address by dealing with the A0,A1 and A2 pins (from 0x20 to 0x27). This circuit uses the MCP23008 GPIO PINs as output.   
 
 ### GPIO as output setup
 
@@ -156,7 +156,7 @@ The image below shows a basic MCP23008 application with LED. You can control up 
 MCP mcp;
 
 void setup() {
-  mcp.setup(0x20, 0); // I2C Address 0x20 and all GPIO pins configured to output
+  mcp.setup(0x20, 0); // I²C Address 0x20 and all GPIO pins configured to output
 ```
 
 You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
@@ -173,7 +173,7 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 MCP mcp;
 
 void setup() {
-    mcp.setup(0x20,0);   // I2C address 0x20; All GPIO port/pin are configured as output
+    mcp.setup(0x20,0);   // I²C address 0x20; All GPIO port/pin are configured as output
 }
 
 void loop() {
@@ -211,7 +211,7 @@ void loop() {
 
 ```cpp
 void setup() {
-  mcp.setup(0x20, 0B11111111); // I2C Address 0x20 and all GPIO pins configured to input
+  mcp.setup(0x20, 0B11111111); // I²C Address 0x20 and all GPIO pins configured to input
 ```
 
 You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
@@ -233,7 +233,7 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 MCP mcp;
 
 void setup() {
-  mcp.setup(0x20, 0B00001111); // I2C Address 0x20, GPIO 0-3 are output and  4-7 are input
+  mcp.setup(0x20, 0B00001111); // I²C Address 0x20, GPIO 0-3 are output and  4-7 are input
 ```
 
 You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
