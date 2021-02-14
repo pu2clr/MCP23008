@@ -14,11 +14,11 @@ This Arduino library implements the most important functions available on MCP230
 2. [Thanks](https://pu2clr.github.io/MCP23008/#thanks)
 3. [Labrary Features](https://pu2clr.github.io/MCP23008/#labrary-features)
 4. [Library Installation](https://pu2clr.github.io/MCP23008/#library-installation)
-5. [Other Arduino Libraries developed by the Author](https://pu2clr.github.io/MCP23008/#Other arduino-libraries-developed-by-the-author)
-6. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
-7. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
-8. [Internal Interrupt setup](https://pu2clr.github.io/MCP23008/#internal-interrupt-setup) 
-9. [References](https://pu2clr.github.io/MCP23008/#references)
+5. [Other Arduino Libraries developed by the Author](https://pu2clr.github.io/MCP23008/#other-arduino-libraries-developed-by-the-author)
+7. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
+8. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
+9. [Internal Interrupt setup](https://pu2clr.github.io/MCP23008/#internal-interrupt-setup) 
+10. [References](https://pu2clr.github.io/MCP23008/#references)
 
 
 ## MIT License 
