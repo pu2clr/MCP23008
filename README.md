@@ -48,7 +48,7 @@ This library uses the I²C communication protocol and implements most important 
 * Internal pull up GPIO resistors control
 * I²C address customization (0x20 ~ 0x27)
 * Internal Interrupt feature setup
- 
+* Reset control
 
 ## Demo video 
 

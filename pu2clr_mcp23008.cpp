@@ -5,6 +5,13 @@
  * @details The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I²C bus applications. It is a great and inexpensive device that allow you to add more peripherals to be controlled by your Arduino board via I²C protocol.
  * @details Some Arduino projects may require more pins than the Arduino actually has. In these cases, you can use up to 8 MCP23008 devices using only the I²C bus (two Arduino pins) and add up to 64 input / output ports to your project. 
  * @details This library can be freely distributed using the MIT Free Software model.
+ * @details This library uses the I²C communication protocol and implements most important functions offered by MCP23008 device from MicroChip. It also has primitive functions that make it easier to implement commands that may not have been implemented yet. The main features implemented can be seen below:
+ * @details 1) GPIO individual control (8 I/O pins)
+ * @details 2) Reading and writing Access to all registers (0x00 ~ 0xA) 
+ * @details 3) Internal pull up GPIO resistors control
+ * @details 4) I²C address customization (0x20 ~ 0x27)
+ * @details 5) Internal Interrupt feature setup 
+ * @details 6) Reset control
  * @author Ricardo LIma Caratti (pu2clr@gmail.com)
  * @brief It is a Library to control the MCP23008 device.
  * @date 2021-01-06
