@@ -22,7 +22,7 @@
    |  LED 3   |  GPIO 7  |             |
    |   VCC    |  RESET   |             |
 
-   See schematic on https://github.com/pu2clr/MCP23008#gpio-as-input-and-output-setup
+   See schematic on https://github.com/pu2clr/MCP23008#internal-interrupt-setup
 
    Instructions:
    When the system starts, press any button and check the Serial Monitor.

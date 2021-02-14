@@ -1,10 +1,33 @@
-
 /**
-   @file mcp_poc_02.ino
-   @author Ricardo Lima Caratti (pu2clr@gmail.com)
-   @brief GPIO pins as input and interrupt control
-   @details This example show how to use MCP23008 GPIO pins as input and also how to configure the interrupt control
-   @copyright Copyright (c) 2021
+   This sketch shows how to deal with interrupts. 
+   
+   See schematic on https://github.com/pu2clr/MCP23008#internal-interrupt-setup
+
+   Arduino and MCP23008 setup
+
+   | Device   | MCP23008 | Description |
+   | -------- | -------- | ----------- |
+   | Arduino  |          |             |
+   |    A5    |  SCL (1) | I2C Clock   |
+   |    A4    |  SDA (2) | I2C Data    |
+   |    D2    |  INT     | Interrupt   |
+   |   RST    |  RESET   | *1          | 
+   | Buttons  |          |             |
+   |   SW0    |  GPIO 0  |             |
+   |   SW1    |  GPIO 1  |             |
+   |   SW2    |  GPIO 2  |             |
+   |   SW3    |  GPIO 3  |             |
+   |  LEDs    |          |             |
+   |  LED 0   |  GPIO 4  |             |
+   |  LED 1   |  GPIO 5  |             |
+   |  LED 2   |  GPIO 6  |             |
+   |  LED 3   |  GPIO 7  |             |
+   |   VCC    |  RESET   |             |
+
+   Instructions:
+   When the system starts, press any button and check the Serial Monitor.
+
+   Author: Ricardo Lima Caratti.
 */
 
 #include <pu2clr_mcp23008.h>
