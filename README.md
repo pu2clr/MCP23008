@@ -17,7 +17,7 @@ This Arduino library implements the most important functions available on MCP230
 5. [Other Arduino Libraries developed by the Author](https://pu2clr.github.io/MCP23008/#Other arduino-libraries-developed-by-the-author)
 6. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
 7. [Basic Schematic](https://pu2clr.github.io/MCP23008/#basic-schematic)
-8. [Internal Interrupt setup]() 
+8. [Internal Interrupt setup](https://pu2clr.github.io/MCP23008/#internal-interrupt-setup) 
 9. [References](https://pu2clr.github.io/MCP23008/#references)
 
 
@@ -252,8 +252,27 @@ The prototype below is based on the GPIO as input and output setup schematic
 
 ## Internal Interrupt setup
 
-The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from higt to low or from low to high). This library some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/) 
+The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from higt to low or from low to high). This library some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/). 
 
+The code below shows how to setup internal interrupt on given GPIO pin. Observe the MCP23008 internal pullup configured before configuring the interrupt. In this setup, the gpio
+
+
+```cpp
+
+  mcp.pullUpGpioOn(GPIO1);          // Enables internal pullup resistor on gpio pin 1
+  mcp.pullUpGpioOn(GPIO3);          // Enables internal pullup resistor on gpio pin 3
+  
+  mcp.setInterrupt(INTERRUPT_INTPOL_ACTIVE_HIGH, INTERRUPT_ODR_OPEN_DRAIN); // Defines the behaviour of the interrupt
+
+  // GPIO pin 1 setup
+  mcp.interruptGpioOn(GPIO1, HIGH); // Sets the GPIO pin 1 to deal with interrupt. The pin 1 will be compared with the value 1 (HIGH). It will be launch an interrupt if the pin 1 goes to level 0 (LOW).
+
+  // GPIO pin 5 setup
+  mcp.interruptGpioOn(GPIO3, HIGH); // Sets the GPIO pin 3 to deal with interrupt. The pin 3 will be compared with the value 1 (HIGH). It will be launch an interrupt if the pin 1 goes to level 0 (LOW).
+
+```
+
+Again. see also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt02](examples/) for more details. These examples use the GPIO as input and output setup schematic.
 
 
 
