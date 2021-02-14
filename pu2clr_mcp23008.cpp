@@ -39,6 +39,23 @@ uint8_t MCP::lookForDevice() {
     return 0;
 }
 
+/**
+ * @ingroup group01
+ * @brief Resets the MCP23008
+ * @details this method can be used if you want to control the reset of the MCP23008 device. You need to select the Arduino pin via setup method.
+ * @details You can used the MCP23008 RESET pin connected to the Arduino RESET pin. In this case, you not need to use this function.
+ * @see setup()
+ */
+void MCP::reset() {
+    if (this->reset_pin >= 0  ) {
+        pinMode(this->reset_pin, OUTPUT);
+        delay(5);
+        digitalWrite(this->reset_pin, LOW);
+        delay(5);
+        digitalWrite(this->reset_pin, HIGH);
+        delay(5);
+    }
+}
 
 /**
  * @ingroup group01
@@ -47,15 +64,19 @@ uint8_t MCP::lookForDevice() {
  * @param i2c I2C address (0x20 ~ 0x27) - default 0x20
  * @param io  If GPIO_OUTPUT (0), all  GPIO PINS will configured to output
  *            If GPIO_INPUT  (255), all GPIO PINS will configured to input  
- *            You also can use a bitmask to configure some pins for input and other pins for output. 
+ *            You also can use a bitmask to configure some pins for input and other pins for output.
+ * @param reset_pin if you want to control the reset, select an Arduino pin to do that.  
  */
-void MCP::setup(uint8_t i2c, uint8_t io) {
+void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin ) {
   
     Wire.begin(); //creates a Wire object
   
     this->i2cAddress = i2c;
     this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
     this->setGPIOS(0);                   // // Sets all port to 0
+
+    this->reset_pin = reset_pin;
+    this->reset();
 }
 
 /**
@@ -66,7 +87,7 @@ void MCP::setup(uint8_t i2c, uint8_t io) {
  * @return uint8_t current register value
  */
 uint8_t MCP::getRegister(uint8_t reg) {
-    delayMicroseconds(6000);
+    delayMicroseconds(2000);
     Wire.beginTransmission(this->i2cAddress);
     Wire.write(reg);
     Wire.endTransmission();
@@ -82,7 +103,7 @@ uint8_t MCP::getRegister(uint8_t reg) {
  * @param value value (8 bits)
  */
 void MCP::setRegister(uint8_t reg, uint8_t value) {
-    delayMicroseconds(6000);
+    delayMicroseconds(2000);
     Wire.beginTransmission(this->i2cAddress);
     Wire.write(reg);
     Wire.write(value);

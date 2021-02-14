@@ -57,9 +57,9 @@ void loop() {
     uint8_t intcap =  mcp.getRegister(REG_INTCAP); // gets the button pressed (GPIO) and cleans the interrupt status
     int button;
 
-    if ( (intcap & 0B00000010) == 0 )   // checks if the button 1 (GPIO 1) is LOW
+    if ( !mcp.isBitValueHigh(intcap,1) )   // checks if the button 1 (register INTCAP 1) is LOW
       button  = 1;
-    else if ((intcap & 0B00001000) == 0) // checks if the button 3 (GPIO 3) is LOW
+    else if (!mcp.isBitValueHigh(intcap,3)) // checks if the button 3 (register INTCAP 3) is LOW
       button = 3;
     else
       button = -1;

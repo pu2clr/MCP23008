@@ -44,6 +44,9 @@
 #define GPIO6 6
 #define GPIO7 7
 
+#define GET_BIT_CONTENT(x,y) ( x & (1 << y) )  // 0 or != 0
+
+
 /**
  * @brief IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05)
  * @details The IOCON register contains several bits for configuring the device. 
@@ -67,14 +70,16 @@ class MCP
 {
 
 protected:
-   uint8_t i2cAddress = 0x20; // Default i2c address
-   uint8_t gpios = 0;         // REG_GPIO shadow register
+   uint8_t i2cAddress = 0x20; //!< Default i2c address
+   uint8_t gpios = 0;         //!< REG_GPIO shadow register
    uint8_t intcap = 0;
    uint8_t intf = 0;
+   int reset_pin =  -1;       //!< Digital Arduino pin to control the MCP2300 RESET
 
 public:
    uint8_t lookForDevice(); 
-   void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT);
+   void reset();
+   void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT, int reset_pint = -1);
    uint8_t getRegister(uint8_t reg);
    void setRegister(uint8_t reg, uint8_t value);
    void turnGpioOn(uint8_t gpio);
@@ -84,7 +89,7 @@ public:
    void setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, uint8_t SEQOP);
    void invertGpioPolarity();
    void setInterrupt(uint8_t polatity = 0, uint8_t openDrainOutput = 0);
-   void interruptGpioOn(uint8_t gpio, uint8_t bitCompare = 1) ;
+   void interruptGpioOn(uint8_t gpio, uint8_t bitCompare = 1);
    bool gpioRead(uint8_t gpio);
    void gpioWrite(uint8_t gpio, uint8_t value);
 
@@ -134,4 +139,15 @@ public:
       return this->intf;
    };
 
+   /**
+    * @ingroup group01
+    * @brief Checks if the Bit Value of a given bit position is high
+    * @details This funcion is useful to extract a bit value (0 or 1) from a given MCP23008 register
+    * @param byteValue byte or register value
+    * @param bitNumber bit offset (number / possition from 0 to 7)
+    * @return true if the bit position is 1 (high)
+    */
+   inline bool isBitValueHigh(uint8_t byteValue, uint8_t bitNumber) {
+      return (byteValue & (1 << bitNumber)) != 0;
+   }
 };
