@@ -91,7 +91,14 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><p>It is a Library to control the MCP23008 device. This library was built based on the Datasheet "MCP23008 8-Bit I/O Expander with Serial Interface" from Microchip</p>
 <p>The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I²C bus applications. It is a great and inexpensive device that allow you to add more peripherals to be controlled by your Arduino board via I²C protocol.</p>
 <p>Some Arduino projects may require more pins than the Arduino actually has. In these cases, you can use up to 8 MCP23008 devices using only the I²C bus (two Arduino pins) and add up to 64 input / output ports to your project.</p>
-<p>This library can be freely distributed using the MIT Free Software model. </p><dl class="section author"><dt>Author</dt><dd>Ricardo LIma Caratti (<a href="#" onclick="location.href='mai'+'lto:'+'pu2'+'cl'+'r@g'+'ma'+'il.'+'co'+'m'; return false;">pu2cl<span style="display: none;">.nosp@m.</span>r@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<p>This library can be freely distributed using the MIT Free Software model.</p>
+<p>This library uses the I²C communication protocol and implements most important functions offered by MCP23008 device from MicroChip. It also has primitive functions that make it easier to implement commands that may not have been implemented yet. The main features implemented can be seen below:</p>
+<p>1) GPIO individual control (8 I/O pins)</p>
+<p>2) Reading and writing Access to all registers (0x00 ~ 0xA)</p>
+<p>3) Internal pull up GPIO resistors control</p>
+<p>4) I²C address customization (0x20 ~ 0x27)</p>
+<p>5) Internal Interrupt feature setup</p>
+<p>6) Reset control </p><dl class="section author"><dt>Author</dt><dd>Ricardo LIma Caratti (<a href="#" onclick="location.href='mai'+'lto:'+'pu2'+'cl'+'r@g'+'ma'+'il.'+'co'+'m'; return false;">pu2cl<span style="display: none;">.nosp@m.</span>r@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2021-01-06 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 Ricardo Lima Caratti </dd></dl>
 </div></div><!-- PageDoc -->
