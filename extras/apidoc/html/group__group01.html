@@ -105,12 +105,18 @@ Functions</h2></td></tr>
 <tr class="memitem:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">MCP::getINTF</a> ()</td></tr>
 <tr class="memdesc:gaba009d1ccd18c43e2451c86f72db2de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTCAP register (value immediately after the last interrupt event)  <a href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">More...</a><br /></td></tr>
 <tr class="separator:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11993fde832efcdf0b069a01b938c235"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga11993fde832efcdf0b069a01b938c235">MCP::isBitValueHigh</a> (uint8_t byteValue, uint8_t bitNumber)</td></tr>
+<tr class="memdesc:ga11993fde832efcdf0b069a01b938c235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the Bit Value of a given bit position is high.  <a href="group__group01.html#ga11993fde832efcdf0b069a01b938c235">More...</a><br /></td></tr>
+<tr class="separator:ga11993fde832efcdf0b069a01b938c235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05f1fbb2347e03149f82f4492200b147"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga05f1fbb2347e03149f82f4492200b147">MCP::lookForDevice</a> ()</td></tr>
 <tr class="memdesc:ga05f1fbb2347e03149f82f4492200b147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for MCP23008 device I2C Address.  <a href="group__group01.html#ga05f1fbb2347e03149f82f4492200b147">More...</a><br /></td></tr>
 <tr class="separator:ga05f1fbb2347e03149f82f4492200b147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">MCP::setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>)</td></tr>
-<tr class="memdesc:gadb7256b4dbca399d6c917c0ddf44367c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">More...</a><br /></td></tr>
-<tr class="separator:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ece5370c32484cfadc69cbed26bfbae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">MCP::reset</a> ()</td></tr>
+<tr class="memdesc:ga9ece5370c32484cfadc69cbed26bfbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the MCP23008.  <a href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">More...</a><br /></td></tr>
+<tr class="separator:ga9ece5370c32484cfadc69cbed26bfbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga112dad09f604633c71543bd40ec3f2cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">MCP::setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>, int reset_pint=-1)</td></tr>
+<tr class="memdesc:ga112dad09f604633c71543bd40ec3f2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">More...</a><br /></td></tr>
+<tr class="separator:ga112dad09f604633c71543bd40ec3f2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">MCP::getRegister</a> (uint8_t reg)</td></tr>
 <tr class="memdesc:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the corrent register information.  <a href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">More...</a><br /></td></tr>
 <tr class="separator:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +274,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga11993fde832efcdf0b069a01b938c235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11993fde832efcdf0b069a01b938c235">&#9670;&nbsp;</a></span>isBitValueHigh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MCP::isBitValueHigh </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>byteValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the Bit Value of a given bit position is high. </p>
+<p>This funcion is useful to extract a bit value (0 or 1) from a given MCP23008 register </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">byteValue</td><td>byte or register value </td></tr>
+    <tr><td class="paramname">bitNumber</td><td>bit offset (number / possition from 0 to 7) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the bit position is 1 (high) </dd></dl>
+
+</div>
+</div>
 <a id="ga05f1fbb2347e03149f82f4492200b147"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga05f1fbb2347e03149f82f4492200b147">&#9670;&nbsp;</a></span>lookForDevice()</h2>
 
@@ -288,8 +340,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gadb7256b4dbca399d6c917c0ddf44367c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb7256b4dbca399d6c917c0ddf44367c">&#9670;&nbsp;</a></span>setup()</h2>
+<a id="ga9ece5370c32484cfadc69cbed26bfbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ece5370c32484cfadc69cbed26bfbae">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MCP::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the MCP23008. </p>
+<p>this method can be used if you want to control the reset of the MCP23008 device. You need to select the Arduino pin via setup method.</p>
+<p>You can used the MCP23008 RESET pin connected to the Arduino RESET pin. In this case, you not need to use this function. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd" title="Starts the MCP23008.">setup()</a> </dd></dl>
+
+<p class="reference">References <a class="el" href="class_m_c_p.html#a84546b5003176041e10cef7f4ce13112">MCP::reset_pin</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">MCP::setup()</a>.</p>
+
+</div>
+</div>
+<a id="ga112dad09f604633c71543bd40ec3f2cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga112dad09f604633c71543bd40ec3f2cd">&#9670;&nbsp;</a></span>setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +381,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>io</em> = <code><a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a></code>&#160;</td>
+          <td class="paramname"><em>io</em> = <code><a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reset_pin</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -320,9 +403,13 @@ Functions</h2></td></tr>
     <tr><td class="paramname">i2c</td><td>I2C address (0x20 ~ 0x27) - default 0x20 </td></tr>
     <tr><td class="paramname">io</td><td>If GPIO_OUTPUT (0), all GPIO PINS will configured to output If GPIO_INPUT (255), all GPIO PINS will configured to input <br  />
  You also can use a bitmask to configure some pins for input and other pins for output. </td></tr>
+    <tr><td class="paramname">reset_pin</td><td>if you want to control the reset, select an Arduino pin to do that. <br  />
+ </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="reference">References <a class="el" href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">MCP::reset()</a>, and <a class="el" href="class_m_c_p.html#a84546b5003176041e10cef7f4ce13112">MCP::reset_pin</a>.</p>
 
 </div>
 </div>

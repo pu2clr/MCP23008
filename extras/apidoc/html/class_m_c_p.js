@@ -1,7 +1,8 @@
 var class_m_c_p =
 [
     [ "lookForDevice", "group__group01.html#ga05f1fbb2347e03149f82f4492200b147", null ],
-    [ "setup", "group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c", null ],
+    [ "reset", "group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae", null ],
+    [ "setup", "group__group01.html#ga112dad09f604633c71543bd40ec3f2cd", null ],
     [ "getRegister", "group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920", null ],
     [ "setRegister", "group__group01.html#gaba8f4501efb5a9772a5b7ec7a428ac4d", null ],
     [ "turnGpioOn", "group__group01.html#ga0164b9f8c7ec58465d00b5761b5d4e0d", null ],
@@ -18,8 +19,10 @@ var class_m_c_p =
     [ "setGPIOS", "group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd", null ],
     [ "getINTCAP", "group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a", null ],
     [ "getINTF", "group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2", null ],
+    [ "isBitValueHigh", "group__group01.html#ga11993fde832efcdf0b069a01b938c235", null ],
     [ "i2cAddress", "class_m_c_p.html#a661ef40042948051e9addd4891e66460", null ],
     [ "gpios", "class_m_c_p.html#accfcacc44509bb19a411856f91f4568a", null ],
     [ "intcap", "class_m_c_p.html#a93ed3497273efa5b13d15c5d813edff4", null ],
-    [ "intf", "class_m_c_p.html#a9321bdb23184865e36e329fac2f32309", null ]
+    [ "intf", "class_m_c_p.html#a9321bdb23184865e36e329fac2f32309", null ],
+    [ "reset_pin", "class_m_c_p.html#a84546b5003176041e10cef7f4ce13112", null ]
 ];

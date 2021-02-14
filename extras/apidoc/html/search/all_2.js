@@ -1,8 +1,20 @@
 var searchData=
 [
-  ['i2caddress_10',['i2cAddress',['../class_m_c_p.html#a661ef40042948051e9addd4891e66460',1,'MCP']]],
-  ['intcap_11',['intcap',['../class_m_c_p.html#a93ed3497273efa5b13d15c5d813edff4',1,'MCP']]],
-  ['interruptgpioon_12',['interruptGpioOn',['../group__group01.html#gac03586dc0fd4cb9ff2f4e49b84ec8f91',1,'MCP']]],
-  ['intf_13',['intf',['../class_m_c_p.html#a9321bdb23184865e36e329fac2f32309',1,'MCP']]],
-  ['invertgpiopolarity_14',['invertGpioPolarity',['../group__group01.html#ga3595987c188c9d1adcb1a8739cc3a278',1,'MCP']]]
+  ['getgpios_2',['getGPIOS',['../group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe',1,'MCP']]],
+  ['getintcap_3',['getINTCAP',['../group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a',1,'MCP']]],
+  ['getintf_4',['getINTF',['../group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2',1,'MCP']]],
+  ['getregister_5',['getRegister',['../group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920',1,'MCP']]],
+  ['gpio0_6',['GPIO0',['../pu2clr__mcp23008_8h.html#a20f88dbc839eb32b5fec903474befdd7',1,'pu2clr_mcp23008.h']]],
+  ['gpio1_7',['GPIO1',['../pu2clr__mcp23008_8h.html#abe59d3a7ce7a18e9440bd54cae1f3fc8',1,'pu2clr_mcp23008.h']]],
+  ['gpio2_8',['GPIO2',['../pu2clr__mcp23008_8h.html#a88a95401ea8409c83cbda42f31450cd0',1,'pu2clr_mcp23008.h']]],
+  ['gpio3_9',['GPIO3',['../pu2clr__mcp23008_8h.html#af3cc04d651b622d5323d74dc2f0999a0',1,'pu2clr_mcp23008.h']]],
+  ['gpio4_10',['GPIO4',['../pu2clr__mcp23008_8h.html#a98aeff9c8b3bbdfd119e4ec4d3f615c8',1,'pu2clr_mcp23008.h']]],
+  ['gpio5_11',['GPIO5',['../pu2clr__mcp23008_8h.html#a1a96368c99d63b0e715b7e0421f4a209',1,'pu2clr_mcp23008.h']]],
+  ['gpio6_12',['GPIO6',['../pu2clr__mcp23008_8h.html#a46027cd97ff756e5ddadcc10811b5699',1,'pu2clr_mcp23008.h']]],
+  ['gpio7_13',['GPIO7',['../pu2clr__mcp23008_8h.html#a3820cacb614277004870fc37b33ad084',1,'pu2clr_mcp23008.h']]],
+  ['gpio_5finput_14',['GPIO_INPUT',['../pu2clr__mcp23008_8h.html#a7be6a0cc9aa65da1d4ee5751b4085853',1,'pu2clr_mcp23008.h']]],
+  ['gpio_5foutput_15',['GPIO_OUTPUT',['../pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1',1,'pu2clr_mcp23008.h']]],
+  ['gpioread_16',['gpioRead',['../group__group01.html#ga2306ecdd30676c6c4ee4ce072524ca59',1,'MCP']]],
+  ['gpios_17',['gpios',['../class_m_c_p.html#accfcacc44509bb19a411856f91f4568a',1,'MCP']]],
+  ['gpiowrite_18',['gpioWrite',['../group__group01.html#ga6c059afd5b8102cc62ebb0058ec62961',1,'MCP']]]
 ];

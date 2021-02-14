@@ -99,9 +99,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga05f1fbb2347e03149f82f4492200b147"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga05f1fbb2347e03149f82f4492200b147">lookForDevice</a> ()</td></tr>
 <tr class="memdesc:ga05f1fbb2347e03149f82f4492200b147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for MCP23008 device I2C Address.  <a href="group__group01.html#ga05f1fbb2347e03149f82f4492200b147">More...</a><br /></td></tr>
 <tr class="separator:ga05f1fbb2347e03149f82f4492200b147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>)</td></tr>
-<tr class="memdesc:gadb7256b4dbca399d6c917c0ddf44367c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#gadb7256b4dbca399d6c917c0ddf44367c">More...</a><br /></td></tr>
-<tr class="separator:gadb7256b4dbca399d6c917c0ddf44367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ece5370c32484cfadc69cbed26bfbae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">reset</a> ()</td></tr>
+<tr class="memdesc:ga9ece5370c32484cfadc69cbed26bfbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the MCP23008.  <a href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">More...</a><br /></td></tr>
+<tr class="separator:ga9ece5370c32484cfadc69cbed26bfbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga112dad09f604633c71543bd40ec3f2cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>, int reset_pint=-1)</td></tr>
+<tr class="memdesc:ga112dad09f604633c71543bd40ec3f2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">More...</a><br /></td></tr>
+<tr class="separator:ga112dad09f604633c71543bd40ec3f2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">getRegister</a> (uint8_t reg)</td></tr>
 <tr class="memdesc:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the corrent register information.  <a href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">More...</a><br /></td></tr>
 <tr class="separator:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,17 +153,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">getINTF</a> ()</td></tr>
 <tr class="memdesc:gaba009d1ccd18c43e2451c86f72db2de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTCAP register (value immediately after the last interrupt event)  <a href="group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2">More...</a><br /></td></tr>
 <tr class="separator:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11993fde832efcdf0b069a01b938c235"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga11993fde832efcdf0b069a01b938c235">isBitValueHigh</a> (uint8_t byteValue, uint8_t bitNumber)</td></tr>
+<tr class="memdesc:ga11993fde832efcdf0b069a01b938c235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the Bit Value of a given bit position is high.  <a href="group__group01.html#ga11993fde832efcdf0b069a01b938c235">More...</a><br /></td></tr>
+<tr class="separator:ga11993fde832efcdf0b069a01b938c235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a661ef40042948051e9addd4891e66460"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#a661ef40042948051e9addd4891e66460">i2cAddress</a> = 0x20</td></tr>
+<tr class="memdesc:a661ef40042948051e9addd4891e66460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default i2c address.  <a href="class_m_c_p.html#a661ef40042948051e9addd4891e66460">More...</a><br /></td></tr>
 <tr class="separator:a661ef40042948051e9addd4891e66460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accfcacc44509bb19a411856f91f4568a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#accfcacc44509bb19a411856f91f4568a">gpios</a> = 0</td></tr>
+<tr class="memdesc:accfcacc44509bb19a411856f91f4568a"><td class="mdescLeft">&#160;</td><td class="mdescRight">REG_GPIO shadow register.  <a href="class_m_c_p.html#accfcacc44509bb19a411856f91f4568a">More...</a><br /></td></tr>
 <tr class="separator:accfcacc44509bb19a411856f91f4568a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ed3497273efa5b13d15c5d813edff4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#a93ed3497273efa5b13d15c5d813edff4">intcap</a> = 0</td></tr>
 <tr class="separator:a93ed3497273efa5b13d15c5d813edff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9321bdb23184865e36e329fac2f32309"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#a9321bdb23184865e36e329fac2f32309">intf</a> = 0</td></tr>
 <tr class="separator:a9321bdb23184865e36e329fac2f32309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84546b5003176041e10cef7f4ce13112"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#a84546b5003176041e10cef7f4ce13112">reset_pin</a> = -1</td></tr>
+<tr class="memdesc:a84546b5003176041e10cef7f4ce13112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital Arduino pin to control the MCP2300 RESET.  <a href="class_m_c_p.html#a84546b5003176041e10cef7f4ce13112">More...</a><br /></td></tr>
+<tr class="separator:a84546b5003176041e10cef7f4ce13112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a661ef40042948051e9addd4891e66460"></a>
@@ -183,6 +194,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default i2c address. </p>
+
 </div>
 </div>
 <a id="accfcacc44509bb19a411856f91f4568a"></a>
@@ -204,6 +217,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>REG_GPIO shadow register. </p>
 
 </div>
 </div>
@@ -248,6 +263,32 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84546b5003176041e10cef7f4ce13112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84546b5003176041e10cef7f4ce13112">&#9670;&nbsp;</a></span>reset_pin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MCP::reset_pin = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Digital Arduino pin to control the MCP2300 RESET. </p>
+
+<p class="reference">Referenced by <a class="el" href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">reset()</a>, and <a class="el" href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">setup()</a>.</p>
 
 </div>
 </div>
