@@ -19,13 +19,13 @@ void setup() {
   while (!Serial); // Waiting for Serial Monitor
 
   mcp.setup(0x20);
-  mcp.turnGpioOn(1);
-  mcp.turnGpioOn(5);
+  mcp.turnGpioOn(MCP_GPIO1);
+  mcp.turnGpioOn(MCP_GPIO5);
 
   showGpios();
   delay(2000);
 
-  mcp.turnGpioOff(5);
+  mcp.turnGpioOff(MCP_GPIO5);
 
   showGpios();
 
@@ -41,28 +41,28 @@ void showGpios() {
 
 void loop() {
 
-  mcp.turnGpioOn(1);
-  mcp.turnGpioOn(5);
-  mcp.turnGpioOn(7);
+  mcp.turnGpioOn(MCP_GPIO1);
+  mcp.turnGpioOn(MCP_GPIO5);
+  mcp.turnGpioOn(MCP_GPIO7);
   showGpios();
   delay(2000);
-  mcp.turnGpioOff(5);
+  mcp.turnGpioOff(MCP_GPIO5);
   delay(1000);
-  mcp.turnGpioOff(1);
+  mcp.turnGpioOff(MCP_GPIO1);
   delay(1000);
-  mcp.turnGpioOff(7);
+  mcp.turnGpioOff(MCP_GPIO7);
   showGpios();
   delay(1000);
-  mcp.turnGpioOn(1);
+  mcp.turnGpioOn(MCP_GPIO1);
   delay(500);
-  mcp.turnGpioOn(5);
+  mcp.turnGpioOn(MCP_GPIO5);
   delay(500);
-  mcp.turnGpioOn(7); 
+  mcp.turnGpioOn(MCP_GPIO7);
   showGpios();
   delay(1000);
-  mcp.turnGpioOff(1);
-  mcp.turnGpioOff(5);
-  mcp.turnGpioOff(7);
+  mcp.turnGpioOff(MCP_GPIO1);
+  mcp.turnGpioOff(MCP_GPIO5);
+  mcp.turnGpioOff(MCP_GPIO7);
   showGpios();
   delay(2000); 
 }
