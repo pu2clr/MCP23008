@@ -233,13 +233,13 @@ You also can use the methos setRegister as shown below (See MCP23008 IODIR regis
 MCP mcp;
 
 void setup() {
-  mcp.setup(0x20, 0B00001111); // I²C Address 0x20, GPIO 0-3 are output and  4-7 are input
+  mcp.setup(0x20, 0B00001111); // I²C Address 0x20, GPIO 0-3 are input and  4-7 are output
 ```
 
 You also can use the methos setRegister as shown below (See MCP23008 IODIR register)
 
 ```cpp
-    mcp.setRegister(REG_IODIR, 0B00001111);    // Sets  GPIO pins 0-3 to output and  GPIO pins 4-7 to input
+    mcp.setRegister(REG_IODIR, 0B00001111);    // Sets  GPIO pins 0-3 to ouinputtput and  GPIO pins 4-7 to output
 ```
 
 #### [See input/output sketch example](https://github.com/pu2clr/MCP23008/tree/main/examples/mcp_poc_03_input_output) 
