@@ -36,10 +36,8 @@ MCP mcp;
 
 
 void setup() {
-
   Serial.begin(9600); // The baudrate of Serial monitor is set in 9600
   while (!Serial); // Waiting for Serial Monitor
-
 
   mcp.setup(0x20, 0B00001111);  // GPIO 0 to 3 are input (buttons) and 4 to 7 are output (LEDs)
   mcp.setRegister(REG_GPPU, 0B00001111); // sets GPIO 0 to 3 with internal pull up resistors
@@ -55,7 +53,6 @@ void setup() {
   mcp.gpioWrite(7, LOW);
   delay(2000);
   turnLedsOff();
-
 }
 
 void turnLedsOff() {
@@ -64,7 +61,6 @@ void turnLedsOff() {
 }
 
 void loop() {
-
   // If any button is pressed the pin level will be set to LOW
   if ( mcp.gpioRead(0) == LOW ) {
     for (uint8_t i = 4; i < 8; i++)

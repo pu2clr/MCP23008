@@ -39,12 +39,10 @@ volatile bool mcp23008_event = false;
 MCP mcp;
 
 void setup() {
-
     uint8_t iocon;
 
     Serial.begin(9600); // The baudrate of Serial monitor is set in 9600
-    while (!Serial)
-        ; // Waiting for Serial Monitor
+    while (!Serial); // Waiting for Serial Monitor
 
     pinMode(ARDUINO_INTERRUPT_PIN, INPUT_PULLUP);
     attachInterrupt(digitalPinToInterrupt(ARDUINO_INTERRUPT_PIN), checkMCP, CHANGE);
@@ -61,7 +59,6 @@ void setup() {
     mcp.setRegister(REG_INTCON,0); // Pin value is compared against the previous pin value.
 
     Serial.print("\n**** Make pins 0, 1, 2 or 3 low ****\n");  
-
 }
 
 /**
@@ -73,7 +70,6 @@ void checkMCP() {
 }
 
 int checkInput(uint8_t intcap) {
-
    for (int i = 0; i < 4; i++ ) 
       if ( !mcp.isBitValueHigh(intcap,i) ) return i;
       
@@ -81,7 +77,6 @@ int checkInput(uint8_t intcap) {
 }
 
 void loop() {
-
     if ( mcp23008_event) { 
         uint8_t intcap = mcp.getRegister(REG_INTCAP);
         int button = checkInput(intcap);

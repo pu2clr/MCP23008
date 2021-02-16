@@ -40,10 +40,8 @@ volatile uint16_t intCount = 0;
 MCP mcp;
 
 void setup() {
-
   Serial.begin(9600); // The baudrate of Serial monitor is set in 9600
   while (!Serial);
-
 
   mcp.setup();
   mcp.setInterrupt(INTERRUPT_INTPOL_ACTIVE_HIGH, INTERRUPT_ODR_OPEN_DRAIN); // Defines the behaviour of the interrupt
@@ -51,7 +49,6 @@ void setup() {
   // GPIO pin 1 setup
   mcp.pullUpGpioOn(MCP_GPIO1);          // Enables internal pullup resistor on gpio pin 1
   mcp.interruptGpioOn(MCP_GPIO1, HIGH); // Sets the GPIO pin 1 to deal with interrupt. The pin 1 will be compared with the value 1 (HIGH). It will be launch an interrupt if the pin 1 goes to level 0 (LOW).
-
 
   // GPIO pin 5 setup
   mcp.pullUpGpioOn(MCP_GPIO3);          // Enables internal pullup resistor on gpio pin 3
