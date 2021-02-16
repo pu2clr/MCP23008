@@ -40,14 +40,14 @@
 #define INTERRUPT_INTPOL_ACTIVE_HIGH 1 //!< Active high - polarity of the INT output pin
 #define INTERRUPT_INTPOL_ACTIVE_LOW 0  //!< Active low  - polarity of the INT output pin
 
-#define GPIO0 0
-#define GPIO1 1
-#define GPIO2 2
-#define GPIO3 3
-#define GPIO4 4
-#define GPIO5 5
-#define GPIO6 6
-#define GPIO7 7
+#define MCP_GPIO0 0
+#define MCP_GPIO1 1
+#define MCP_GPIO2 2
+#define MCP_GPIO3 3
+#define MCP_GPIO4 4
+#define MCP_GPIO5 5
+#define MCP_GPIO6 6
+#define MCP_GPIO7 7
 
 #define CHECK_BIT_HIGH(x,y) ( x & (1 << y) )  // Check if a bit is high. Returns 0 or != 0
 
