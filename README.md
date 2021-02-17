@@ -259,7 +259,7 @@ The MCP23008 device has internal interrupt support. That means you can know inst
 
 The code below shows how to setup internal interrupt on given GPIO pin. Observe the MCP23008 internal pullup configured before configuring the interrupt. In this setup, the gpio
 
-It is importante to know: __only  pins  configured  as  inputs  can  cause  interrupts. Pins configured as outputs have no affect on INT__.
+It is important to know: __only  pins  configured  as  inputs  can  cause  interrupts. Pins configured as outputs have no affect on INT__.
 
 
 ```cpp
