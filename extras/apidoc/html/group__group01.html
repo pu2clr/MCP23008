@@ -138,6 +138,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaae9a3fa6a65147cb05673fd2611c6990"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaae9a3fa6a65147cb05673fd2611c6990">MCP::registerDigitalRead</a> (uint8_t mcp_register, uint8_t bit_position)</td></tr>
 <tr class="memdesc:gaae9a3fa6a65147cb05673fd2611c6990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the status (high or low) or a given bit (position) of a given MCP23008 register.  <a href="group__group01.html#gaae9a3fa6a65147cb05673fd2611c6990">More...</a><br /></td></tr>
 <tr class="separator:gaae9a3fa6a65147cb05673fd2611c6990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2d4a1b72e4540defde22621024effcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gad2d4a1b72e4540defde22621024effcb">MCP::registerDigitalWrite</a> (uint8_t mcp_register, uint8_t bit_position, uint8_t value)</td></tr>
+<tr class="memdesc:gad2d4a1b72e4540defde22621024effcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets High or Low to a given position in a given MCP23008 register.  <a href="group__group01.html#gad2d4a1b72e4540defde22621024effcb">More...</a><br /></td></tr>
+<tr class="separator:gad2d4a1b72e4540defde22621024effcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad504a9ca7a1af1c98cabcf2f7c7a88c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gad504a9ca7a1af1c98cabcf2f7c7a88c8">MCP::pullUpGpioOn</a> (uint8_t gpio)</td></tr>
 <tr class="memdesc:gad504a9ca7a1af1c98cabcf2f7c7a88c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns intenal pull up resistor ON to a given GPIO PIN (high level)  <a href="group__group01.html#gad504a9ca7a1af1c98cabcf2f7c7a88c8">More...</a><br /></td></tr>
 <tr class="separator:gad504a9ca7a1af1c98cabcf2f7c7a88c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -631,6 +634,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if it is High </dd></dl>
+
+</div>
+</div>
+<a id="gad2d4a1b72e4540defde22621024effcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2d4a1b72e4540defde22621024effcb">&#9670;&nbsp;</a></span>registerDigitalWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MCP::registerDigitalWrite </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>mcp_register</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bit_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets High or Low to a given position in a given MCP23008 register. </p>
+<p>Sets a given bit value to a given position in a given MCP23008 register <br  />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mcp_register</td><td>MCM23008 register </td></tr>
+    <tr><td class="paramname">bit_position</td><td>bit position </td></tr>
+    <tr><td class="paramname">value</td><td>0 = Low; 1 = High </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

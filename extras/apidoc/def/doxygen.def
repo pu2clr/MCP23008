@@ -583,7 +583,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'class_m_c_p_1ad2d4a1b72e4540defde22621024effcb';
+      sec-mem-id   = 'group__group01_1gad2d4a1b72e4540defde22621024effcb';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_

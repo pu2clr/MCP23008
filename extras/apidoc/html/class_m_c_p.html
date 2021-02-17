@@ -147,9 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaae9a3fa6a65147cb05673fd2611c6990"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaae9a3fa6a65147cb05673fd2611c6990">registerDigitalRead</a> (uint8_t mcp_register, uint8_t bit_position)</td></tr>
 <tr class="memdesc:gaae9a3fa6a65147cb05673fd2611c6990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the status (high or low) or a given bit (position) of a given MCP23008 register.  <a href="group__group01.html#gaae9a3fa6a65147cb05673fd2611c6990">More...</a><br /></td></tr>
 <tr class="separator:gaae9a3fa6a65147cb05673fd2611c6990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d4a1b72e4540defde22621024effcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_p.html#ad2d4a1b72e4540defde22621024effcb">registerDigitalWrite</a> (uint8_t mcp_register, uint8_t bit_position, uint8_t value)</td></tr>
-<tr class="memdesc:ad2d4a1b72e4540defde22621024effcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets High or Low to a given position in a given MCP23008 register.  <a href="class_m_c_p.html#ad2d4a1b72e4540defde22621024effcb">More...</a><br /></td></tr>
-<tr class="separator:ad2d4a1b72e4540defde22621024effcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2d4a1b72e4540defde22621024effcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gad2d4a1b72e4540defde22621024effcb">registerDigitalWrite</a> (uint8_t mcp_register, uint8_t bit_position, uint8_t value)</td></tr>
+<tr class="memdesc:gad2d4a1b72e4540defde22621024effcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets High or Low to a given position in a given MCP23008 register.  <a href="group__group01.html#gad2d4a1b72e4540defde22621024effcb">More...</a><br /></td></tr>
+<tr class="separator:gad2d4a1b72e4540defde22621024effcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe">getGPIOS</a> ()</td></tr>
 <tr class="memdesc:ga0cb2b67c45363a172323bf51f18b51fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="class_m_c_p.html">MCP</a> GPIO pin levels.  <a href="group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe">More...</a><br /></td></tr>
 <tr class="separator:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,51 +201,6 @@ Protected Attributes</h2></td></tr>
 <p>Returns the IOCON content. </p>
 <p>This function returns a <a class="el" href="pu2clr__mcp23008_8h.html#unionmcp23008__ioncon" title="IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05)">mcp23008_ioncon</a> datatype with the IOCON register content </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="pu2clr__mcp23008_8h.html#unionmcp23008__ioncon" title="IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05)">mcp23008_ioncon</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="pu2clr__mcp23008_8h.html#unionmcp23008__ioncon" title="IOCON register structure - I/O EXPANDER CONFIGURATION REGISTER (ADDR 0x05)">mcp23008_ioncon</a> content </dd></dl>
-
-</div>
-</div>
-<a id="ad2d4a1b72e4540defde22621024effcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2d4a1b72e4540defde22621024effcb">&#9670;&nbsp;</a></span>registerDigitalWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MCP::registerDigitalWrite </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>mcp_register</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>bit_position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets High or Low to a given position in a given MCP23008 register. </p>
-<p>Sets a given bit value to a given position in a given MCP23008 register <br  />
- </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mcp_register</td><td>MCM23008 register </td></tr>
-    <tr><td class="paramname">bit_position</td><td>bit position </td></tr>
-    <tr><td class="paramname">value</td><td>0 = Low; 1 = High </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

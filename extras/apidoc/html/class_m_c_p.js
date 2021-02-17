@@ -17,7 +17,7 @@ var class_m_c_p =
     [ "gpioRead", "group__group01.html#ga2306ecdd30676c6c4ee4ce072524ca59", null ],
     [ "gpioWrite", "group__group01.html#ga6c059afd5b8102cc62ebb0058ec62961", null ],
     [ "registerDigitalRead", "group__group01.html#gaae9a3fa6a65147cb05673fd2611c6990", null ],
-    [ "registerDigitalWrite", "class_m_c_p.html#ad2d4a1b72e4540defde22621024effcb", null ],
+    [ "registerDigitalWrite", "group__group01.html#gad2d4a1b72e4540defde22621024effcb", null ],
     [ "getGPIOS", "group__group01.html#ga0cb2b67c45363a172323bf51f18b51fe", null ],
     [ "setGPIOS", "group__group01.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd", null ],
     [ "getINTCAP", "group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a", null ],

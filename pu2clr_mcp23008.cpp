@@ -191,6 +191,7 @@ bool MCP::registerDigitalRead(uint8_t mcp_register, uint8_t bit_position)
 }
 
 /**
+ * @ingroup group01
  * @brief Sets High or Low to a given position in a given MCP23008 register 
  * @details Sets a given bit value to a given position in a given MCP23008 register  
  * @param mcp_register MCM23008 register
