@@ -176,6 +176,8 @@ void MCP::gpioWrite(uint8_t gpio, uint8_t value) {
     this->setRegister(REG_GPIO, (currentGpio & ~(1 << gpio)) | (value << gpio) );
 }
 
+
+
 /**
  * @ingroup group01
  * @brief Turns intenal pull up resistor ON  to  a given GPIO PIN (high level)
@@ -239,6 +241,20 @@ void MCP::setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, ui
     iocon.arg.SEQOP = SEQOP;
 
     this->setRegister(REG_IOCON, iocon.raw);
+}
+
+/**
+ * @brief Returns the IOCON content 
+ * @details This function returns a mcp23008_ioncon datatype with the IOCON register content 
+ * @see mcp23008_ioncon
+ * @return mcp23008_ioncon content
+ */
+mcp23008_ioncon MCP::getIoCon()
+{
+    uint8_t iocon = this->getRegister(REG_IOCON);
+    mcp23008_ioncon aux;
+    aux.raw = iocon;
+    return aux;
 }
 
 /**

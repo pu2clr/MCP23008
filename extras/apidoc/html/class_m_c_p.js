@@ -10,6 +10,7 @@ var class_m_c_p =
     [ "pullUpGpioOn", "group__group01.html#gad504a9ca7a1af1c98cabcf2f7c7a88c8", null ],
     [ "pullUpGpioOff", "group__group01.html#gab669a85d10e0c8372babed1c49ffb5ed", null ],
     [ "setIoCon", "group__group01.html#gad5ecb8741304bbaee9e1626f57efcdea", null ],
+    [ "getIoCon", "class_m_c_p.html#ad68298aa33294d2d5dabaf5c9d4fa0b5", null ],
     [ "invertGpioPolarity", "group__group01.html#ga3595987c188c9d1adcb1a8739cc3a278", null ],
     [ "setInterrupt", "group__group01.html#ga6acb6478e2baa56b4a2834306f7e1963", null ],
     [ "interruptGpioOn", "group__group01.html#gac03586dc0fd4cb9ff2f4e49b84ec8f91", null ],

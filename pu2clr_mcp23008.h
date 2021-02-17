@@ -92,6 +92,7 @@ public:
    void pullUpGpioOn(uint8_t gpio);
    void pullUpGpioOff(uint8_t gpio);
    void setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, uint8_t SEQOP);
+   mcp23008_ioncon getIoCon();
    void invertGpioPolarity();
    void setInterrupt(uint8_t polatity = 0, uint8_t openDrainOutput = 0);
    void interruptGpioOn(uint8_t gpio, uint8_t bitCompare = 1);

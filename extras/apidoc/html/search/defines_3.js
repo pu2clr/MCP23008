@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['reg_5fdefval_107',['REG_DEFVAL',['../pu2clr__mcp23008_8h.html#aa13bec64661c81668056f0b303c7794b',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fgpinten_108',['REG_GPINTEN',['../pu2clr__mcp23008_8h.html#a575e0c713d36d9de6d81f6b746574a7b',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fgpio_109',['REG_GPIO',['../pu2clr__mcp23008_8h.html#ab3fc35f8c61fd650971ec4e3329cabac',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fgppu_110',['REG_GPPU',['../pu2clr__mcp23008_8h.html#a50665a2700493ae6c1d69adcf454e786',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fintcap_111',['REG_INTCAP',['../pu2clr__mcp23008_8h.html#a61b72d5a4d4d7d78ad51b523462fa445',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fintcon_112',['REG_INTCON',['../pu2clr__mcp23008_8h.html#ad04ccdae4910c0e9e6f3fccee6868fde',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fintf_113',['REG_INTF',['../pu2clr__mcp23008_8h.html#ad06a5aaaf1af27787cab7c132225ae76',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fiocon_114',['REG_IOCON',['../pu2clr__mcp23008_8h.html#a16a497cb509be41c4e6de44d707234b6',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fiodir_115',['REG_IODIR',['../pu2clr__mcp23008_8h.html#a5fc08d2f74765206202ac3721b7c7125',1,'pu2clr_mcp23008.h']]],
-  ['reg_5fipol_116',['REG_IPOL',['../pu2clr__mcp23008_8h.html#af770bc40e87878d08198ed10b0cce6b7',1,'pu2clr_mcp23008.h']]],
-  ['reg_5folat_117',['REG_OLAT',['../pu2clr__mcp23008_8h.html#a0964e829dee70fc23463ce4948486211',1,'pu2clr_mcp23008.h']]]
+  ['mcp_5fgpio0_101',['MCP_GPIO0',['../pu2clr__mcp23008_8h.html#a10b43c1046ff20767241fc48b538aece',1,'pu2clr_mcp23008.h']]],
+  ['mcp_5fgpio1_102',['MCP_GPIO1',['../pu2clr__mcp23008_8h.html#a4e9d734c24ac7c6228500c61b6d93685',1,'pu2clr_mcp23008.h']]],
+  ['mcp_5fgpio2_103',['MCP_GPIO2',['../pu2clr__mcp23008_8h.html#ab686a07b3b13d065a77f958f046a7896',1,'pu2clr_mcp23008.h']]],
+  ['mcp_5fgpio3_104',['MCP_GPIO3',['../pu2clr__mcp23008_8h.html#ae378c08e78bc8d3d2820307f89c811fa',1,'pu2clr_mcp23008.h']]],
+  ['mcp_5fgpio4_105',['MCP_GPIO4',['../pu2clr__mcp23008_8h.html#a8f276c0181405c8f3240d3e002aac421',1,'pu2clr_mcp23008.h']]],
+  ['mcp_5fgpio5_106',['MCP_GPIO5',['../pu2clr__mcp23008_8h.html#ab2c0c88b5354498c136ff8a84973cd0d',1,'pu2clr_mcp23008.h']]],
+  ['mcp_5fgpio6_107',['MCP_GPIO6',['../pu2clr__mcp23008_8h.html#af41a5d7f5fdfa9a6505a26819a36e9fd',1,'pu2clr_mcp23008.h']]],
+  ['mcp_5fgpio7_108',['MCP_GPIO7',['../pu2clr__mcp23008_8h.html#a07e849a41d30410c2b50d85d0e17442b',1,'pu2clr_mcp23008.h']]]
 ];
