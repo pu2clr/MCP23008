@@ -14,6 +14,7 @@ var group__group01 =
     [ "turnGpioOff", "group__group01.html#ga09893717b6ae4b71455ea2a3657a88eb", null ],
     [ "gpioRead", "group__group01.html#ga2306ecdd30676c6c4ee4ce072524ca59", null ],
     [ "gpioWrite", "group__group01.html#ga6c059afd5b8102cc62ebb0058ec62961", null ],
+    [ "registerDigitalRead", "group__group01.html#gaae9a3fa6a65147cb05673fd2611c6990", null ],
     [ "pullUpGpioOn", "group__group01.html#gad504a9ca7a1af1c98cabcf2f7c7a88c8", null ],
     [ "pullUpGpioOff", "group__group01.html#gab669a85d10e0c8372babed1c49ffb5ed", null ],
     [ "setIoCon", "group__group01.html#gad5ecb8741304bbaee9e1626f57efcdea", null ],

@@ -98,6 +98,8 @@ public:
    void interruptGpioOn(uint8_t gpio, uint8_t bitCompare = 1);
    bool gpioRead(uint8_t gpio);
    void gpioWrite(uint8_t gpio, uint8_t value);
+   bool registerDigitalRead(uint8_t mcp_register, uint8_t bit_position);
+   void registerDigitalWrite(uint8_t mcp_register, uint8_t bit_position, uint8_t value);
 
    /**
    * @ingroup group01

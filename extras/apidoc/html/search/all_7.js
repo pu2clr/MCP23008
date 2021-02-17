@@ -12,6 +12,8 @@ var searchData=
   ['reg_5fiodir_49',['REG_IODIR',['../pu2clr__mcp23008_8h.html#a5fc08d2f74765206202ac3721b7c7125',1,'pu2clr_mcp23008.h']]],
   ['reg_5fipol_50',['REG_IPOL',['../pu2clr__mcp23008_8h.html#af770bc40e87878d08198ed10b0cce6b7',1,'pu2clr_mcp23008.h']]],
   ['reg_5folat_51',['REG_OLAT',['../pu2clr__mcp23008_8h.html#a0964e829dee70fc23463ce4948486211',1,'pu2clr_mcp23008.h']]],
-  ['reset_52',['reset',['../group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae',1,'MCP']]],
-  ['reset_5fpin_53',['reset_pin',['../class_m_c_p.html#a84546b5003176041e10cef7f4ce13112',1,'MCP']]]
+  ['registerdigitalread_52',['registerDigitalRead',['../group__group01.html#gaae9a3fa6a65147cb05673fd2611c6990',1,'MCP']]],
+  ['registerdigitalwrite_53',['registerDigitalWrite',['../class_m_c_p.html#ad2d4a1b72e4540defde22621024effcb',1,'MCP']]],
+  ['reset_54',['reset',['../group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae',1,'MCP']]],
+  ['reset_5fpin_55',['reset_pin',['../class_m_c_p.html#a84546b5003176041e10cef7f4ce13112',1,'MCP']]]
 ];

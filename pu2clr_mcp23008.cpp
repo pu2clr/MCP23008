@@ -155,9 +155,9 @@ void MCP::turnGpioOff(uint8_t gpio)
  * @brief Reads the status (high or low) or a given GPIO
  * @details Returns true if the gpio is hight or fale if it is low.
  * @param gpio pin number
+ * @returns true if it is High
  */
 bool MCP::gpioRead(uint8_t gpio) {
-    // Checks if it is already OFF
     if (gpio > 7) return false;
     return getRegister(REG_GPIO) & (1 << gpio);
 }
@@ -176,7 +176,34 @@ void MCP::gpioWrite(uint8_t gpio, uint8_t value) {
     this->setRegister(REG_GPIO, (currentGpio & ~(1 << gpio)) | (value << gpio) );
 }
 
+/**
+ * @ingroup group01
+ * @brief Reads the status (high or low) or a given bit (position) of a given MCP23008 register
+ * @details Returns true if the bit of the register is hight or fale if it is low.
+ * @param bit_position bit position 
+ * @returns true if it is High
+ */
+bool MCP::registerDigitalRead(uint8_t mcp_register, uint8_t bit_position)
+{
+    if (bit_position > 7)
+        return false;
+    return getRegister(mcp_register) & (1 << bit_position);
+}
 
+/**
+ * @brief Sets High or Low to a given position in a given MCP23008 register 
+ * @details Sets a given bit value to a given position in a given MCP23008 register  
+ * @param mcp_register MCM23008 register
+ * @param bit_position bit position
+ * @param value 0 = Low; 1 = High
+ */
+void MCP::registerDigitalWrite(uint8_t mcp_register, uint8_t bit_position, uint8_t value)
+{
+    if (bit_position > 7)
+        return;
+    uint8_t currentRegisterValue = this->getRegister(mcp_register); // Gets the current register value
+    this->setRegister(mcp_register, (currentRegisterValue & ~(1 << bit_position)) | (value << bit_position));
+}
 
 /**
  * @ingroup group01
