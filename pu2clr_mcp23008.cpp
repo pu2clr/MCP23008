@@ -152,7 +152,7 @@ void MCP::turnGpioOff(uint8_t gpio)
 
 /**
  * @ingroup group01
- * @brief Reads the status (high or low) or a given GPIO
+ * @brief Reads the status (high or low) of a given GPIO
  * @details Returns true if the gpio is hight or fale if it is low.
  * @param gpio pin number
  * @returns true if it is High
@@ -178,7 +178,7 @@ void MCP::gpioWrite(uint8_t gpio, uint8_t value) {
 
 /**
  * @ingroup group01
- * @brief Reads the status (high or low) or a given bit (position) of a given MCP23008 register
+ * @brief Reads the status (high or low) of a given bit (position) of a given MCP23008 register
  * @details Returns true if the bit of the register is hight or fale if it is low.
  * @param bit_position bit position 
  * @returns true if it is High

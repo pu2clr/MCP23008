@@ -509,7 +509,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
       sec-mem-desc-line = '99';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Reads the status (high or low) or a given GPIO.
+Reads the status (high or low) of a given GPIO.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 Returns true if the gpio is hight or fale if it is low.
@@ -573,7 +573,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
       sec-mem-desc-line = '101';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Reads the status (high or low) or a given bit (position) of a given MCP23008 register.
+Reads the status (high or low) of a given bit (position) of a given MCP23008 register.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 Returns true if the bit of the register is hight or fale if it is low.
