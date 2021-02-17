@@ -49,7 +49,7 @@
 #define MCP_GPIO6 6
 #define MCP_GPIO7 7
 
-#define CHECK_BIT_HIGH(x,y) ( x & (1 << y) )  // Check if a bit is high. Returns 0 or != 0
+#define CHECK_BIT_HIGH(x,y) ( x & (1 << y) )  //!< Check if a bit is high. Returns 0 or != 0
 
 
 /**

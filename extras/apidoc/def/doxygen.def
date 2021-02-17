@@ -1538,7 +1538,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
       define-mem-desc-line = '52';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Check if a bit is high. Returns 0 or != 0.
 _EnD_oF_dEf_TeXt_;
       define-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
