@@ -72,10 +72,11 @@ void MCP::reset() {
  *            You also can use a bitmask to configure some pins for input and other pins for output.
  * @param reset_pin if you want to control the reset, select an Arduino pin to do that.  
  */
-void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin ) {
+void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, uint32_t freq) {
   
     Wire.begin(); //creates a Wire object
-  
+    Wire.setClock(freq);
+    
     this->i2cAddress = i2c;
     this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
     this->setGPIOS(0);                   // // Sets all port to 0
