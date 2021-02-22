@@ -66,23 +66,22 @@ void MCP::reset() {
  * @ingroup group01
  * @brief Starts the MCP23008 
  * @details Starts the MCP23008 and sets the default values. 
- * @param i2c I2C address (0x20 ~ 0x27) - default 0x20
+ * @param i2c I2C address (0x20 ~ 0x27) - default 0x20; ports input / output setup; Arduino reset pin; and I2C clock frequency
  * @param io  If GPIO_OUTPUT (0), all  GPIO PINS will configured to output
  *            If GPIO_INPUT  (255), all GPIO PINS will configured to input  
  *            You also can use a bitmask to configure some pins for input and other pins for output.
  * @param reset_pin if you want to control the reset, select an Arduino pin to do that.  
+ * @param i2c_bus_freq set the I2C bus frequency/speed (default 100000 = 100KHz)
  */
-void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, uint32_t freq) {
-  
-    Wire.begin(); //creates a Wire object
-    Wire.setClock(freq);
-    
-    this->i2cAddress = i2c;
-    this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
-    this->setGPIOS(0);                   // // Sets all port to 0
 
     this->reset_pin = reset_pin;
     this->reset();
+
+    Wire.begin(); //creates a Wire object
+    this->i2cAddress = i2c;
+    this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
+    this->setGPIOS(0);                   // // Sets all port to 0 (LOW)
+    this->setI2CFrequency(i2c_bus_freq);
 }
 
 /**

@@ -18,6 +18,7 @@
  */
 
 #include <Arduino.h>
+#include <Wire.h>
 
 // registers
 #define REG_IODIR 0x00   //!< Controls the direction of the data I/O. When  a  bit  is  set,  the  corresponding  pin  becomes  an input.  When  a  bit  is  clear,  the  corresponding  pin becomes an output.
@@ -84,7 +85,6 @@ protected:
 public:
    uint8_t lookForDevice(); 
    void reset();
-   void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT, int reset_pint = -1, uint32_t freq = 100000);
    uint8_t getRegister(uint8_t reg);
    void setRegister(uint8_t reg, uint8_t value);
    void turnGpioOn(uint8_t gpio);
@@ -158,4 +158,18 @@ public:
    inline bool isBitValueHigh(uint8_t byteValue, uint8_t bitNumber) {
       return (byteValue & (1 << bitNumber)) != 0;
    }
+
+   /**
+     * @ingroup group01 I2C Frequency
+     * @brief Sets I2C bus to a given frequency
+     * @details 100000 = 100KHz; 400000 = 400KHz etc 
+     * @details Plese check the property I2C bus frequency/speed of your board
+     */
+   inline void setI2CFrequency(long freq)
+   {
+      Wire.setClock(freq);
+   };
+
 };
+
+
