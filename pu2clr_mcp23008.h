@@ -85,7 +85,6 @@ protected:
 public:
    uint8_t lookForDevice(); 
    void reset();
-   void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT, int reset_pint = -1, long i2c_freq = 100000);
    uint8_t getRegister(uint8_t reg);
    void setRegister(uint8_t reg, uint8_t value);
    void turnGpioOn(uint8_t gpio);
