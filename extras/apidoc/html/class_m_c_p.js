@@ -23,7 +23,7 @@ var class_m_c_p =
     [ "getINTCAP", "group__group01.html#gaba9db6fcdab5c170a6716abd9ab4642a", null ],
     [ "getINTF", "group__group01.html#gaba009d1ccd18c43e2451c86f72db2de2", null ],
     [ "isBitValueHigh", "group__group01.html#ga11993fde832efcdf0b069a01b938c235", null ],
-    [ "setI2CFrequency", "group__group01.html#ga60eddb7d0a0432294864129f7a09c19f", null ],
+    [ "setClock", "group__group01.html#ga65fddc9ae6a6f581b07346025621d512", null ],
     [ "i2cAddress", "class_m_c_p.html#a661ef40042948051e9addd4891e66460", null ],
     [ "gpios", "class_m_c_p.html#accfcacc44509bb19a411856f91f4568a", null ],
     [ "intcap", "class_m_c_p.html#a93ed3497273efa5b13d15c5d813edff4", null ],

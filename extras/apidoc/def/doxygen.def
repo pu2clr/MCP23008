@@ -129,9 +129,9 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-name = 'reset_pin';
     };
       sec-mem-referenceto = {
-        sec-mem-ref-id = 'pu2clr__mcp23008_8h_1ga60eddb7d0a0432294864129f7a09c19f';
+        sec-mem-ref-id = 'pu2clr__mcp23008_8h_1ga65fddc9ae6a6f581b07346025621d512';
         sec-mem-ref-line = '169';
-        sec-mem-ref-name = 'setI2CFrequency';
+        sec-mem-ref-name = 'setClock';
     };
     }; /* sec-member */
     sec-member = {
@@ -752,13 +752,13 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga60eddb7d0a0432294864129f7a09c19f';
+      sec-mem-id   = 'group__group01_1ga65fddc9ae6a6f581b07346025621d512';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
 void
 _EnD_oF_dEf_TeXt_;
-      sec-mem-name = 'setI2CFrequency';
+      sec-mem-name = 'setClock';
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
 long
