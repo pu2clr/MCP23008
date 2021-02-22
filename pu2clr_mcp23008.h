@@ -85,6 +85,7 @@ protected:
 public:
    uint8_t lookForDevice(); 
    void reset();
+   void setup(uint8_t i2c = 0x20, uint8_t io = GPIO_OUTPUT, int reset_pint = -1, long i2c_freq = 100000);
    uint8_t getRegister(uint8_t reg);
    void setRegister(uint8_t reg, uint8_t value);
    void turnGpioOn(uint8_t gpio);
@@ -165,7 +166,7 @@ public:
      * @details 100000 = 100KHz; 400000 = 400KHz etc 
      * @details Plese check the property I2C bus frequency/speed of your board
      */
-   inline void setI2CFrequency(long freq)
+   inline void setClock(long freq)
    {
       Wire.setClock(freq);
    };

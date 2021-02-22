@@ -73,6 +73,7 @@ void MCP::reset() {
  * @param reset_pin if you want to control the reset, select an Arduino pin to do that.  
  * @param i2c_bus_freq set the I2C bus frequency/speed (default 100000 = 100KHz)
  */
+void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, long i2c_bus_freq) {
 
     this->reset_pin = reset_pin;
     this->reset();
@@ -81,7 +82,7 @@ void MCP::reset() {
     this->i2cAddress = i2c;
     this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
     this->setGPIOS(0);                   // // Sets all port to 0 (LOW)
-    this->setI2CFrequency(i2c_bus_freq);
+    this->setClock(i2c_bus_freq);
 }
 
 /**
