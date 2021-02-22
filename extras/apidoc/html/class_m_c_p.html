@@ -102,9 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga9ece5370c32484cfadc69cbed26bfbae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">reset</a> ()</td></tr>
 <tr class="memdesc:ga9ece5370c32484cfadc69cbed26bfbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the MCP23008.  <a href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">More...</a><br /></td></tr>
 <tr class="separator:ga9ece5370c32484cfadc69cbed26bfbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga112dad09f604633c71543bd40ec3f2cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>, int reset_pint=-1)</td></tr>
-<tr class="memdesc:ga112dad09f604633c71543bd40ec3f2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">More...</a><br /></td></tr>
-<tr class="separator:ga112dad09f604633c71543bd40ec3f2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbee27bb9d321a90d627c0f23a665494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gafbee27bb9d321a90d627c0f23a665494">setup</a> (uint8_t i2c=0x20, uint8_t io=<a class="el" href="pu2clr__mcp23008_8h.html#a0db9fe8a278e6ab7c5c6f14fe58e5eb1">GPIO_OUTPUT</a>, int reset_pint=-1, long i2c_freq=100000)</td></tr>
+<tr class="memdesc:gafbee27bb9d321a90d627c0f23a665494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the MCP23008.  <a href="group__group01.html#gafbee27bb9d321a90d627c0f23a665494">More...</a><br /></td></tr>
+<tr class="separator:gafbee27bb9d321a90d627c0f23a665494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">getRegister</a> (uint8_t reg)</td></tr>
 <tr class="memdesc:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the corrent register information.  <a href="group__group01.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">More...</a><br /></td></tr>
 <tr class="separator:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga11993fde832efcdf0b069a01b938c235"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga11993fde832efcdf0b069a01b938c235">isBitValueHigh</a> (uint8_t byteValue, uint8_t bitNumber)</td></tr>
 <tr class="memdesc:ga11993fde832efcdf0b069a01b938c235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the Bit Value of a given bit position is high.  <a href="group__group01.html#ga11993fde832efcdf0b069a01b938c235">More...</a><br /></td></tr>
 <tr class="separator:ga11993fde832efcdf0b069a01b938c235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60eddb7d0a0432294864129f7a09c19f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga60eddb7d0a0432294864129f7a09c19f">setI2CFrequency</a> (long freq)</td></tr>
+<tr class="memdesc:ga60eddb7d0a0432294864129f7a09c19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets I2C bus to a given frequency.  <a href="group__group01.html#ga60eddb7d0a0432294864129f7a09c19f">More...</a><br /></td></tr>
+<tr class="separator:ga60eddb7d0a0432294864129f7a09c19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -319,7 +322,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Digital Arduino pin to control the MCP2300 RESET. </p>
 
-<p class="reference">Referenced by <a class="el" href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">reset()</a>, and <a class="el" href="group__group01.html#ga112dad09f604633c71543bd40ec3f2cd">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="group__group01.html#ga9ece5370c32484cfadc69cbed26bfbae">reset()</a>, and <a class="el" href="group__group01.html#gafbee27bb9d321a90d627c0f23a665494">setup()</a>.</p>
 
 </div>
 </div>
