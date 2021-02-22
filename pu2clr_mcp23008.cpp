@@ -79,10 +79,10 @@ void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, long i2c_bus_freq) {
     this->reset();
 
     Wire.begin(); //creates a Wire object
+    this->setClock(i2c_bus_freq);
     this->i2cAddress = i2c;
     this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
     this->setGPIOS(0);                   // // Sets all port to 0 (LOW)
-    this->setClock(i2c_bus_freq);
 }
 
 /**
