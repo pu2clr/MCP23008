@@ -103,7 +103,7 @@ public:
    void registerDigitalWrite(uint8_t mcp_register, uint8_t bit_position, uint8_t value);
 
    /**
-   * @ingroup group01
+   * @ingroup group02
    * @brief Returns the current MCP GPIO pin levels 
    * 
    * @return uint8_t 
@@ -115,7 +115,7 @@ public:
    };
 
    /**
-   * @ingroup group01
+   * @ingroup group02
    * @brief Sets a value to the GPIO Register
    * @details A direct way to set a given value to deal with the GPIOs pins.
    * @param value (8 bits)
@@ -125,7 +125,7 @@ public:
    }
 
    /**
-     * @ingroup group01
+     * @ingroup group02
      * @brief Returns the last value of INTCAP register (value immediately after the last interrupt event)
      * 
      * @return uint8_t 
@@ -137,7 +137,7 @@ public:
    };
 
    /**
-     * @ingroup group01
+     * @ingroup group02
      * @brief Returns the last value of INTF register 
      * @details The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register. A ‘set’ bit indicates that the associated pin caused the interrupt.
      * @return uint8_t 
