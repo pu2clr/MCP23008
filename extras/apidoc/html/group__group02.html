@@ -93,6 +93,18 @@ $(document).ready(function(){initNavTree('group__group02.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group02.html#ga0cb2b67c45363a172323bf51f18b51fe">MCP::getGPIOS</a> ()</td></tr>
+<tr class="memdesc:ga0cb2b67c45363a172323bf51f18b51fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="class_m_c_p.html">MCP</a> GPIO pin levels.  <a href="group__group02.html#ga0cb2b67c45363a172323bf51f18b51fe">More...</a><br /></td></tr>
+<tr class="separator:ga0cb2b67c45363a172323bf51f18b51fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group02.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd">MCP::setGPIOS</a> (uint8_t value)</td></tr>
+<tr class="memdesc:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value to the GPIO Register.  <a href="group__group02.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd">More...</a><br /></td></tr>
+<tr class="separator:ga9d0c5ff49456ba2016efb6dc56ddb1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group02.html#gaba9db6fcdab5c170a6716abd9ab4642a">MCP::getINTCAP</a> ()</td></tr>
+<tr class="memdesc:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTCAP register (value immediately after the last interrupt event)  <a href="group__group02.html#gaba9db6fcdab5c170a6716abd9ab4642a">More...</a><br /></td></tr>
+<tr class="separator:gaba9db6fcdab5c170a6716abd9ab4642a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group02.html#gaba009d1ccd18c43e2451c86f72db2de2">MCP::getINTF</a> ()</td></tr>
+<tr class="memdesc:gaba009d1ccd18c43e2451c86f72db2de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value of INTF register.  <a href="group__group02.html#gaba009d1ccd18c43e2451c86f72db2de2">More...</a><br /></td></tr>
+<tr class="separator:gaba009d1ccd18c43e2451c86f72db2de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group02.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">MCP::getRegister</a> (uint8_t reg)</td></tr>
 <tr class="memdesc:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the corrent register information.  <a href="group__group02.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920">More...</a><br /></td></tr>
 <tr class="separator:ga490e4a6820e3a2e0dd86c1a7aa5bb920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +153,124 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga0cb2b67c45363a172323bf51f18b51fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cb2b67c45363a172323bf51f18b51fe">&#9670;&nbsp;</a></span>getGPIOS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MCP::getGPIOS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current <a class="el" href="class_m_c_p.html">MCP</a> GPIO pin levels. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t </dd></dl>
+
+</div>
+</div>
+<a id="ga9d0c5ff49456ba2016efb6dc56ddb1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d0c5ff49456ba2016efb6dc56ddb1cd">&#9670;&nbsp;</a></span>setGPIOS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MCP::setGPIOS </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a value to the GPIO Register. </p>
+<p>A direct way to set a given value to deal with the GPIOs pins. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>(8 bits) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaba9db6fcdab5c170a6716abd9ab4642a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba9db6fcdab5c170a6716abd9ab4642a">&#9670;&nbsp;</a></span>getINTCAP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MCP::getINTCAP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the last value of INTCAP register (value immediately after the last interrupt event) </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t </dd></dl>
+
+</div>
+</div>
+<a id="gaba009d1ccd18c43e2451c86f72db2de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba009d1ccd18c43e2451c86f72db2de2">&#9670;&nbsp;</a></span>getINTF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MCP::getINTF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the last value of INTF register. </p>
+<p>The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register. A ‘set’ bit indicates that the associated pin caused the interrupt. </p><dl class="section return"><dt>Returns</dt><dd>uint8_t </dd></dl>
+
+</div>
+</div>
 <a id="ga490e4a6820e3a2e0dd86c1a7aa5bb920"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga490e4a6820e3a2e0dd86c1a7aa5bb920">&#9670;&nbsp;</a></span>getRegister()</h2>
 

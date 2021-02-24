@@ -1,5 +1,9 @@
 var group__group02 =
 [
+    [ "getGPIOS", "group__group02.html#ga0cb2b67c45363a172323bf51f18b51fe", null ],
+    [ "setGPIOS", "group__group02.html#ga9d0c5ff49456ba2016efb6dc56ddb1cd", null ],
+    [ "getINTCAP", "group__group02.html#gaba9db6fcdab5c170a6716abd9ab4642a", null ],
+    [ "getINTF", "group__group02.html#gaba009d1ccd18c43e2451c86f72db2de2", null ],
     [ "getRegister", "group__group02.html#ga490e4a6820e3a2e0dd86c1a7aa5bb920", null ],
     [ "setRegister", "group__group02.html#gaba8f4501efb5a9772a5b7ec7a428ac4d", null ],
     [ "turnGpioOn", "group__group02.html#ga0164b9f8c7ec58465d00b5761b5d4e0d", null ],
