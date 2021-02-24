@@ -136,7 +136,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga490e4a6820e3a2e0dd86c1a7aa5bb920';
+      sec-mem-id   = 'group__group02_1ga490e4a6820e3a2e0dd86c1a7aa5bb920';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -162,7 +162,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gaba8f4501efb5a9772a5b7ec7a428ac4d';
+      sec-mem-id   = 'group__group02_1gaba8f4501efb5a9772a5b7ec7a428ac4d';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -195,7 +195,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga0164b9f8c7ec58465d00b5761b5d4e0d';
+      sec-mem-id   = 'group__group02_1ga0164b9f8c7ec58465d00b5761b5d4e0d';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -220,7 +220,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga09893717b6ae4b71455ea2a3657a88eb';
+      sec-mem-id   = 'group__group02_1ga09893717b6ae4b71455ea2a3657a88eb';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -245,7 +245,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gad504a9ca7a1af1c98cabcf2f7c7a88c8';
+      sec-mem-id   = 'group__group02_1gad504a9ca7a1af1c98cabcf2f7c7a88c8';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -270,7 +270,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gab669a85d10e0c8372babed1c49ffb5ed';
+      sec-mem-id   = 'group__group02_1gab669a85d10e0c8372babed1c49ffb5ed';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -295,7 +295,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gad5ecb8741304bbaee9e1626f57efcdea';
+      sec-mem-id   = 'group__group02_1gad5ecb8741304bbaee9e1626f57efcdea';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -370,7 +370,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'class_m_c_p_1ad68298aa33294d2d5dabaf5c9d4fa0b5';
+      sec-mem-id   = 'group__group02_1gad68298aa33294d2d5dabaf5c9d4fa0b5';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -390,7 +390,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga3595987c188c9d1adcb1a8739cc3a278';
+      sec-mem-id   = 'group__group02_1ga3595987c188c9d1adcb1a8739cc3a278';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -415,7 +415,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga6acb6478e2baa56b4a2834306f7e1963';
+      sec-mem-id   = 'group__group02_1ga6acb6478e2baa56b4a2834306f7e1963';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -460,7 +460,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gac03586dc0fd4cb9ff2f4e49b84ec8f91';
+      sec-mem-id   = 'group__group02_1gac03586dc0fd4cb9ff2f4e49b84ec8f91';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -509,7 +509,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga2306ecdd30676c6c4ee4ce072524ca59';
+      sec-mem-id   = 'group__group02_1ga2306ecdd30676c6c4ee4ce072524ca59';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -535,7 +535,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga6c059afd5b8102cc62ebb0058ec62961';
+      sec-mem-id   = 'group__group02_1ga6c059afd5b8102cc62ebb0058ec62961';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -567,7 +567,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gaae9a3fa6a65147cb05673fd2611c6990';
+      sec-mem-id   = 'group__group02_1gaae9a3fa6a65147cb05673fd2611c6990';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -599,7 +599,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gad2d4a1b72e4540defde22621024effcb';
+      sec-mem-id   = 'group__group02_1gad2d4a1b72e4540defde22621024effcb';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -710,7 +710,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_MCP23008/pu2clr_mcp23008.h';
       sec-mem-desc-line = '145';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-Returns the last value of INTCAP register (value immediately after the last interrupt event)
+Returns the last value of INTF register.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register. A ‘set’ bit indicates that the associated pin caused the interrupt.

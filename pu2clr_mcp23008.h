@@ -138,7 +138,7 @@ public:
 
    /**
      * @ingroup group01
-     * @brief Returns the last value of INTCAP register (value immediately after the last interrupt event)
+     * @brief Returns the last value of INTF register 
      * @details The INTF register reflects the interrupt condition on the port pins of any pin that is enabled for interrupts via the GPINTEN register. A ‘set’ bit indicates that the associated pin caused the interrupt.
      * @return uint8_t 
      */

@@ -22,7 +22,7 @@
 
 #include <Wire.h>
 
-/** @defgroup group01 MCP23008 functions */
+/** @defgroup group01 MCP23008 basic functions */
 
 /**
  * @ingroup group01
@@ -85,8 +85,10 @@ void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, long i2c_bus_freq) {
     this->setGPIOS(0);                   // // Sets all port to 0 (LOW)
 }
 
+/** @defgroup group02 MCP23008 IO functions */
+
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Gets the corrent register information. 
  * @details Gets the current register content. 
  * @param reg  (0x00 ~ 0xA) see MCP23008 registers documentation 
@@ -102,7 +104,7 @@ uint8_t MCP::getRegister(uint8_t reg) {
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Sets a value to a given register
  * @details Sets a given 8 bit value to a given register.  
  * @param reg   (0x00 ~ 0xA) see MCP23008 registers documentation 
@@ -118,7 +120,7 @@ void MCP::setRegister(uint8_t reg, uint8_t value) {
 
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Turns a given GPIO port on (high level)
  * @details Sets a given GPIO pin high
  * @param gpio the GPIO/PIN number (0-7)
@@ -136,7 +138,7 @@ void MCP::turnGpioOn(uint8_t gpio)
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Turns a given GPIO port off (low level)
  * @details Sets a given GPIO pin to low
  * @param gpio the GPIO/PIN number (0-7)
@@ -152,7 +154,7 @@ void MCP::turnGpioOff(uint8_t gpio)
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Reads the status (high or low) of a given GPIO
  * @details Returns true if the gpio is hight or fale if it is low.
  * @param gpio pin number
@@ -164,7 +166,7 @@ bool MCP::gpioRead(uint8_t gpio) {
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Sets a given value (high(1) or low(0) ) to a given gpio pin
  * @details It is like the turnGpioOn()
  * @param gpio pin number
@@ -178,7 +180,7 @@ void MCP::gpioWrite(uint8_t gpio, uint8_t value) {
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Reads the status (high or low) of a given bit (position) of a given MCP23008 register
  * @details Returns true if the bit of the register is hight or fale if it is low.
  * @param bit_position bit position 
@@ -192,7 +194,7 @@ bool MCP::registerDigitalRead(uint8_t mcp_register, uint8_t bit_position)
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Sets High or Low to a given position in a given MCP23008 register 
  * @details Sets a given bit value to a given position in a given MCP23008 register  
  * @param mcp_register MCM23008 register
@@ -208,7 +210,7 @@ void MCP::registerDigitalWrite(uint8_t mcp_register, uint8_t bit_position, uint8
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Turns intenal pull up resistor ON  to  a given GPIO PIN (high level)
  * @details Activates the pull up resistor to a given GPIO pin
  * @param gpio the GPIO/PIN number (0-7)
@@ -226,7 +228,7 @@ void MCP::pullUpGpioOn(uint8_t gpio)
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Turns intenal pull up resistor OFF  to a given GPIO PIN (low level)
  * @details Deactivates the pull up resistor to a given GPIO pin
  * @param gpio the GPIO/PIN number (0-7)
@@ -242,7 +244,7 @@ void MCP::pullUpGpioOff(uint8_t gpio)
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Sets the IO Configurarion gerister
  * @details The IOCON register contains several bits for configuring the device:
  * @details TheSequentialOperation(SEQOP)controlsthe incrementing function of the address pointer. 
@@ -273,6 +275,7 @@ void MCP::setIoCon(uint8_t INTPOL, uint8_t ODR, uint8_t HAEN, uint8_t DISSLW, ui
 }
 
 /**
+ * @ingroup group02
  * @brief Returns the IOCON content 
  * @details This function returns a mcp23008_ioncon datatype with the IOCON register content 
  * @see mcp23008_ioncon
@@ -287,7 +290,7 @@ mcp23008_ioncon MCP::getIoCon()
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Inverts the polarity of the __all__ GPIO port bits.
  * @details The IPOL register allows the user to configure the polarity on the corresponding GPIO port bits.
  * @details If a bit is set, the corresponding GPIO register bit will reflect the inverted value on the pin.
@@ -301,7 +304,7 @@ void MCP::invertGpioPolarity() {
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Configures the MCP23008 interrupt feature.
  * @details The INT output pin will be activated when an internal interrupt occurs. 
  * @details The interrupt block can be configured by the following registers: GPINTEN, DEFVAL, INTCON and IOCON(ODRandINPOL).
@@ -319,7 +322,7 @@ void MCP::setInterrupt(uint8_t polatity , uint8_t openDrainOutput) {
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Sets the interrupt-on-change feature to a given GPIO pin 
  * @details The GPINTEN register controls the interrupt-on-change feature for each pin.
  * @details If a bit is set, the corresponding pin is enabled for interrupt-on-change. 
