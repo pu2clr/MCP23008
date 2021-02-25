@@ -1,17 +1,13 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
 MCP	KEYWORD1
-SI4735 KEYWORD1
-RdsInit	KEYWORD2
-analogPowerUp KEYWORD2
-digitalOutputFormat	KEYWORD2
-digitalOutputSampleRate	KEYWORD2
-downloadPatch KEYWORD2
-downloadPatchFromEeprom	KEYWORD2
-frequencyDown KEYWORD2
-frequencyUp	KEYWORD2
-getACFIndicator	KEYWORD2
-getAgcGainIndex	KEYWORD2
-getAntennaTuningCapacitor KEYWORD2
-getAutomaticGainControl	KEYWORD2
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
 mcp23008_ioncon KEYWORD2
 lookForDevice KEYWORD2
 reset KEYWORD2
@@ -37,6 +33,10 @@ getINTCAP KEYWORD2
 getINTF KEYWORD2
 isBitValueHigh KEYWORD2
 setClock KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
 
 REG_IODIR LITERAL1
 REG_IPOL LITERAL1
@@ -64,8 +64,3 @@ MCP_GPIO5 LITERAL1
 MCP_GPIO6 LITERAL1
 MCP_GPIO7 LITERAL1
 CHECK_BIT_HIGH LITERAL1
-
-
-
-
-
