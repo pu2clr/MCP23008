@@ -95,7 +95,7 @@ void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, long i2c_bus_freq) {
  * @return uint8_t current register value
  */
 uint8_t MCP::getRegister(uint8_t reg) {
-    delayMicroseconds(2000);
+    // delayMicroseconds(2000);
     Wire.beginTransmission(this->i2cAddress);
     Wire.write(reg);
     Wire.endTransmission();
@@ -111,7 +111,7 @@ uint8_t MCP::getRegister(uint8_t reg) {
  * @param value value (8 bits)
  */
 void MCP::setRegister(uint8_t reg, uint8_t value) {
-    delayMicroseconds(2000);
+    // delayMicroseconds(2000);
     Wire.beginTransmission(this->i2cAddress);
     Wire.write(reg);
     Wire.write(value);
