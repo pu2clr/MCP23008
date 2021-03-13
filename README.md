@@ -260,9 +260,9 @@ The prototype below is based on the GPIO as input and output setup schematic
 
 The MCP23008 device has internal interrupt support. That means you can know instantly when a GPIO configured as input changed its status (from high to low or from low to high). This library implements some functions to support MCP23008 internal interrupts. You also can configure the internal interrupt behaviour. See the [MCP23008 library API for more details](https://pu2clr.github.io/MCP23008/extras/apidoc/html/).  See also [the examples mcp_poc_interrupt01 ans mcp_poc_interrupt01](examples/). 
 
-The code below shows how to setup internal interrupt on given GPIO pin. Observe the MCP23008 internal pullup configured before configuring the interrupt. In this setup, the gpio
+The code below shows how to setup internal interrupt on given GPIO pin. Observe the MCP23008 internal pullup configured before configuring the interrupt. In this setup, the gpio.
 
-It is important to know: __only  pins  configured  as  inputs  can  cause  interrupts. Pins configured as outputs have no affect on INT__.
+It is important to know: __only  pins  configured  as  inputs  can  cause  interrupts. Pins configured as outputs have no affect on INT. After an interrupt is triggered, you can not deal with other interrupt until GPIO or INTCAP registers is read. Only reading GPIO or INTCAP registers  will clean the interrupt status and will make a new interrupt possible__. 
 
 
 ```cpp
@@ -310,9 +310,6 @@ void setup() {
   mcp.reset();  // the setup function above already called the MCP23008 reset. But you can also call reset function if you need it in other situation
 
 ```
-
-
-
 
 
 ## References 
