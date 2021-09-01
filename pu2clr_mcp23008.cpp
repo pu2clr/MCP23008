@@ -32,11 +32,11 @@
  */
 uint8_t MCP::lookForDevice() {
     int err = 0;
-    Wire.begin();
+    wire->begin();
     for (int addr = 0x20; addr <= 0x27; addr++)
     {
-        Wire.beginTransmission(addr);
-        err = Wire.endTransmission();
+        wire->beginTransmission(addr);
+        err = wire->endTransmission();
         if (err == 0)
             return addr;
     }
@@ -78,7 +78,7 @@ void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, long i2c_bus_freq) {
     this->reset_pin = reset_pin;
     this->reset();
 
-    Wire.begin(); //creates a Wire object
+    wire->begin(); //creates a Wire object
     this->setClock(i2c_bus_freq);
     this->i2cAddress = i2c;
     this->setRegister(REG_IODIR, io);    // All GPIO pins are configured to input (1)  or output (0)
@@ -96,11 +96,11 @@ void MCP::setup(uint8_t i2c, uint8_t io, int reset_pin, long i2c_bus_freq) {
  */
 uint8_t MCP::getRegister(uint8_t reg) {
     // delayMicroseconds(2000);
-    Wire.beginTransmission(this->i2cAddress);
-    Wire.write(reg);
-    Wire.endTransmission();
-    Wire.requestFrom((int) this->i2cAddress, (int) 1); 
-    return Wire.read();
+    wire->beginTransmission(this->i2cAddress);
+    wire->write(reg);
+    wire->endTransmission();
+    wire->requestFrom((int) this->i2cAddress, (int) 1);
+    return wire->read();
 }
 
 /**
@@ -112,10 +112,10 @@ uint8_t MCP::getRegister(uint8_t reg) {
  */
 void MCP::setRegister(uint8_t reg, uint8_t value) {
     // delayMicroseconds(2000);
-    Wire.beginTransmission(this->i2cAddress);
-    Wire.write(reg);
-    Wire.write(value);
-    Wire.endTransmission(); //ends communication with the device
+    wire->beginTransmission(this->i2cAddress);
+    wire->write(reg);
+    wire->write(value);
+    wire->endTransmission(); //ends communication with the device
 }
 
 

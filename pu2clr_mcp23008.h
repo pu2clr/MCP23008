@@ -81,6 +81,7 @@ protected:
    uint8_t intcap = 0;
    uint8_t intf = 0;
    int reset_pin =  -1;       //!< Digital Arduino pin to control the MCP2300 RESET
+   TwoWire *wire = nullptr;   //!< Pointer to TwoWire object
 
 public:
    uint8_t lookForDevice(); 
@@ -101,6 +102,18 @@ public:
    void gpioWrite(uint8_t gpio, uint8_t value);
    bool registerDigitalRead(uint8_t mcp_register, uint8_t bit_position);
    void registerDigitalWrite(uint8_t mcp_register, uint8_t bit_position, uint8_t value);
+
+   /**
+    * @brief MCP constructor
+    * @param custom_wire pointer to a TwoWire object to use
+    */
+   MCP(TwoWire *custom_wire = nullptr)
+   {
+     if (custom_wire == nullptr)
+       wire = &Wire;
+     else
+       wire = custom_wire;
+   }
 
    /**
    * @ingroup group02
@@ -168,7 +181,7 @@ public:
      */
    inline void setClock(long freq)
    {
-      Wire.setClock(freq);
+      wire->setClock(freq);
    };
 
 };
