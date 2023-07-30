@@ -176,7 +176,7 @@ void MCP::gpioWrite(uint8_t gpio, uint8_t value) {
     if (gpio > 7)
         return;
     uint8_t currentGpio = this->getRegister(REG_GPIO) ;
-    this->setRegister(REG_GPIO, (currentGpio & ~(1 << gpio)) | (value << gpio) );
+    this->setRegister(REG_GPIO, (currentGpio & ~(1 << 2)) | (value << gpio) );
 }
 
 /**

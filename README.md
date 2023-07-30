@@ -11,6 +11,15 @@ This Arduino library implements the most important functions available on MCP230
 
 [Copyright (c) 2021 Ricardo Lima Caratti](https://pu2clr.github.io/MCP23008/#mit-license).
 
+
+
+## Donate 
+
+[If you find this project useful, consider making a donation so that the author of this library can purchase components and modules for improvements and testing of this library. Click here to donate.](https://www.paypal.com/donate/?business=LLV4PHKTXC4JW&no_recurring=0&item_name=Consider+making+a+donation.++So+I+can+purchase+components+and+modules+for+improvements+and+testing+of+this+library.&currency_code=USD)
+
+
+
+
 ## Contents
 
 1. [License Copyright](https://pu2clr.github.io/MCP23008/#mit-license)
@@ -313,6 +322,52 @@ void setup() {
   .  
   . 
   mcp.reset();  // the setup function above already called the MCP23008 reset. But you can also call reset function if you need it in other situation
+
+```
+
+
+#### Extending the MCP class
+
+A good way to customize the PU2CLR MCP Arduino Library for your needs is extending the current version of the library by using C++ OOP approaching.  For example: 
+
+```cpp
+#include <pu2clr_mcp23008.h>
+class MyCustomMCP : public MCP { // extending the original MCP class
+  public:
+    // New functions / methods
+    int methodA() {    // some MCP action that PU2CLR MCP Arduino Library does not implement
+      return 0;
+    }
+
+    int methodB() {    // another MCP action that PU2CLR MCP Arduino Library does not implement
+      return 1;
+    }
+
+    // Overwriting existent methods
+    void setRegister(uint8_t reg, uint8_t value) { 
+      // Here, your setRegister code that will replace the original code 
+
+      return;
+    }
+}
+
+// Now you can use the extended class
+
+MyCustomMCP myMCP;
+
+void setup()
+{
+  Serial.begin(9600);
+  while (!Serial);
+
+  myMCP.methodA();
+  myMCP.methodB();
+  myMCP.setRegister(REG_GPIO, (myMCPgetRegister(REG_GPIO) & ~(1 << 2)) | (HIGH << 2) );
+
+}
+
+
+
 
 ```
 
